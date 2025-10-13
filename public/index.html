@@ -1,18 +1,218 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="no-js" lang="es-MX">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>RETRAMA | Tarimas de Madera, Embalajes y Huacales</title>
+    <meta name="author" content="RETRAMA" />
+    <meta name="description"
+      content="RETRAMA es una empresa especializada en la fabricación y comercialización de tarimas de madera, embalajes, huacales y soluciones para todo tipo de industrias." />
+    <meta name="keywords"
+      content="tarimas de madera, embalajes, huacales, fabricación, comercialización, industria, soluciones industriales, RETRAMA" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title"
+      content="RETRAMA | Tarimas de Madera, Embalajes y Huacales" />
+    <meta property="og:description"
+      content="RETRAMA es una empresa especializada en la fabricación y comercialización de tarimas de madera, embalajes, huacales y soluciones para todo tipo de industrias." />
+    <meta property="og:image"
+      content="%PUBLIC_URL%/assets/img/logo.png" />
+    <meta property="og:url" content="https://tudominio.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+      content="RETRAMA | Tarimas de Madera, Embalajes y Huacales" />
+    <meta name="twitter:description"
+      content="RETRAMA es una empresa especializada en la fabricación y comercialización de tarimas de madera, embalajes, huacales y soluciones para todo tipo de industrias." />
+    <meta name="twitter:image"
+      content="%PUBLIC_URL%/assets/img/logo.png" />
+    <meta name="twitter:site" content="@retrama" />
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="%PUBLIC_URL%/assets/img/favicon.png"
+      type="image/x-icon" />
+    <link rel="manifest" href="%PUBLIC_URL%/assets/img/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/assets/img/favicon.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/swiper-bundle.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css">
+
+    <!-- React necesarios -->
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="React app created with Docker - Retrama"
-    />
-    <title>Retrama React App</title>
   </head>
+
   <body>
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+    <div class="cursor-follower"></div>
+
+    <!-- slider drag cursor -->
+    <div class="slider-drag-cursor"><img src="%PUBLIC_URL%/assets/img/icon/arrow.svg" alt></div>
+
+    <!--==============================
+     Preloader
+    ==============================-->
+    <div class="preloader ">
+      <button class="th-btn style1 preloaderCls">Cancel Preloader
+      </button>
+      <div class="preloader-inner">
+        <img src="%PUBLIC_URL%/assets/img/logo.png" alt="Rasm">
+        <span class="loader"></span>
+      </div>
+    </div>
+
+    <!--==============================
+    Sidemenu
+    ============================== -->
+    <div class="sidemenu-wrapper d-none d-lg-block ">
+      <div class="sidemenu-content">
+        <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
+        <div class="widget footer-widget">
+          <h3 class="widget_title">Acerca de RETRAMA</h3>
+          <div class="th-widget-about">
+            <p class="about-text">
+              Somos especialistas en la fabricación de tarimas, embalajes y empaques industriales de madera, diseñados para garantizar la integridad de sus productos en toda la cadena de suministro.
+            </p>
+            <div class="th-social">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-search-box d-none d-lg-block">
+      <button class="searchClose"><i class="fal fa-times"></i></button>
+      <form action="#">
+        <input type="text" placeholder="What are you looking for?">
+        <button type="submit"><i class="fal fa-search"></i></button>
+      </form>
+    </div>
+
+    <!--==============================
+    Mobile Menu
+    ============================== -->
+    <div class="th-menu-wrapper">
+      <div class="th-menu-area text-center">
+        <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+        <div class="mobile-logo">
+          <a href="/"><img src="%PUBLIC_URL%/assets/img/logo.png" alt="RETRAMA"></a>
+        </div>
+
+        <div class="th-mobile-menu">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li class="menu-item-has-children">
+              <a href="#productos">Productos</a>
+              <ul class="sub-menu">
+                <li><a href="#tarimas-nuevas">Tarimas Nuevas</a></li>
+                <li><a href="#tarimas-medida">Tarimas a la medida</a></li>
+                <li><a href="#tarimas-reacondicionadas">Tarimas Reacondicionadas</a></li>
+                <li><a href="#tarimas-hibridas">Tarimas Hibridas</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#soluciones">Soluciones</a>
+              <ul class="sub-menu">
+                <li><a href="#compra-tarimas">Compra de tarimas usadas</a></li>
+                <li><a href="#reparacion">Reparación de tarimas</a></li>
+                <li><a href="#norma-144">Cumplimiento norma 144</a></li>
+              </ul>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Root element donde React montará la aplicación -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+        </path>
+      </svg>
+    </div>
+
+    <!--==============================
+        All Js File
+    ============================== -->
+    <!-- Jquery -->
+    <script src="%PUBLIC_URL%/assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="%PUBLIC_URL%/assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="%PUBLIC_URL%/assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="%PUBLIC_URL%/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="%PUBLIC_URL%/assets/js/jquery.counterup.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="%PUBLIC_URL%/assets/js/circle-progress.js"></script>
+    <!-- Range Slider -->
+    <script src="%PUBLIC_URL%/assets/js/jquery-ui.min.js"></script>
+    <!-- Imagesloadedr -->
+    <script src="%PUBLIC_URL%/assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- isotope -->
+    <script src="%PUBLIC_URL%/assets/js/isotope.pkgd.min.js"></script>
+    <!-- Nice-select -->
+    <script src="%PUBLIC_URL%/assets/js/nice-select.min.js"></script>
+    <!-- wow -->
+    <script src="%PUBLIC_URL%/assets/js/wow.min.js"></script>
+
+    <!-- Gsap JS -->
+    <script src="%PUBLIC_URL%/assets/js/gsap.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/ScrollTrigger.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/SplitText.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/lenis.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="%PUBLIC_URL%/assets/js/main.js"></script>
+
   </body>
 </html>
