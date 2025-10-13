@@ -1,17 +1,26 @@
 import React from 'react';
-import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Process from './components/Process';
+import Industries from './components/Industries';
+import Products from './components/Products';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <h1>¡Bienvenido a Retrama React App!</h1>
-                <p>Esta aplicación está ejecutándose en Docker con nombre personalizado</p>
-                <div className="retrama-logo">
-                    🚀 RETRAMA CONTAINER
-                </div>
-                <p>Editá <code>src/App.js</code> y guardá para recargar.</p>
-            </header>
+            <Header />
+            <Hero />
+            <About />
+            <Services />
+            <Process />
+            <Industries />
+            <Products />
+            <Contact />
+            <Footer />
         </div>
     );
 }
