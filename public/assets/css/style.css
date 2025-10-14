@@ -20980,7 +20980,7 @@ span.select2-selection.select2-selection--single:focus {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: inline-flex;
-  visibility: hidden;
+  /*visibility: hidden;*/
   overflow: hidden;
 }
 

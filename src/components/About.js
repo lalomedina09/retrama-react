@@ -43,7 +43,9 @@ const About = () => {
                                             <i className="fa-solid fa-play"></i>
                                         </a>
                                         <div className="discount-tag">
-                                            <span className="discount-anime">Tarimas, embalajes y empaques</span>
+                                            {/* 
+                                                <span className="discount-anime">Tarimas, embalajes y empaques</span>
+                                            */}
                                         </div>
                                     </div>
                                 </div>
@@ -58,16 +60,18 @@ const About = () => {
                                     el manejo, almacenaje y transporte seguro de sus mercancías.
                                 </p>
                                 <div className="btn-group mt-30 justify-content-start">
-                                    <a href="#about" className="th-btn th-radius th-icon">
-                                        <span
-                                            className="btn-text"
-                                            data-back="More About Us"
-                                            data-front="More About Us"
-                                        >
-                                            More About Us
-                                        </span>
-                                        <i className="fa-regular fa-arrow-right ms-2"></i>
-                                    </a>
+                                        {/* 
+                                            <a href="#about" className="th-btn th-radius th-icon">
+                                                <span
+                                                    className="btn-text"
+                                                    data-back="More About Us"
+                                                    data-front="More About Us"
+                                                >
+                                                    More About Us
+                                                </span>
+                                                <i className="fa-regular fa-arrow-right ms-2"></i>
+                                            </a>
+                                        */}
                                 </div>
                                 <div className="counter-item-wrap ps-xl-4">
                                     {stats.map((stat, index) => (
