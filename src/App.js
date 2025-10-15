@@ -13,7 +13,7 @@ import Footer from './components/layout/Footer';
 // Páginas (ahora importando los componentes reales)
 import Home from './pages/Home';
 import Products from './pages/Products';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 import Solutions from './pages/Solutions';
 import About from './pages/About';
 
