@@ -10,12 +10,12 @@ import CursorFollower from './components/ui/CursorFollower';
 import ScrollToTop from './components/layout/ScrollToTop';
 import Footer from './components/layout/Footer';
 
-// Componentes de páginas temporales
-const Home = () => <main><h1>Página de Inicio</h1></main>;
-const Products = () => <main><h1>Productos</h1></main>;
-const Contact = () => <main><h1>Contacto</h1></main>;
-const Solutions = () => <main><h1>Soluciones</h1></main>;
-const About = () => <main><h1>Nosotros</h1></main>;
+// Páginas (ahora importando los componentes reales)
+import Home from './pages/Home';
+import Products from './pages/Products';
+import Contact from './pages/Contact';
+import Solutions from './pages/Solutions';
+import About from './pages/About';
 
 // Importar estilos globales
 import './App.css';
