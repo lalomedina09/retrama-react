@@ -13,9 +13,11 @@ import Footer from './components/layout/Footer';
 // Páginas (ahora importando los componentes reales)
 import Home from './pages/Home';
 import Products from './pages/Products';
-import Contact from './pages/Contact/Contact';
 import Solutions from './pages/Solutions';
+
+import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
+import FAQ from './pages/FAQ/FAQ';
 
 // Importar estilos globales
 import './App.css';
@@ -37,6 +39,7 @@ function App() {
                     <Route path="/productos" element={<Products />} />
                     <Route path="/soluciones" element={<Solutions />} />
                     <Route path="/nosotros" element={<About />} />
+                    <Route path="/preguntas-frecuentes" element={<FAQ />} />
                     <Route path="/contacto" element={<Contact />} />
                 </Routes>
 

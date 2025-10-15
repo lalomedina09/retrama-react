@@ -113,6 +113,9 @@ const Header = () => {
                                         <li className={isActiveLink('/soluciones')}>
                                             <Link to="/soluciones">Soluciones</Link>
                                         </li>
+                                        <li className={isActiveLink('/preguntas-frecuentes')}>
+                                            <Link to="/preguntas-frecuentes">FAQ</Link>
+                                        </li>
                                         <li className={isActiveLink('/contacto')}>
                                             <Link to="/contacto">Contacto</Link>
                                         </li>
@@ -122,27 +125,7 @@ const Header = () => {
 
                             {/* Botones del header */}
                             <div className="col-auto d-none d-xl-block">
-                                <div className="header-button">
-                                    {/* Botón de búsqueda (opcional)
-                                    <button 
-                                        type="button" 
-                                        className="icon-btn searchBoxToggler"
-                                        onClick={handleSearchToggle}
-                                    >
-                                        <i className="far fa-search"></i>
-                                    </button>
-                                    */}
-
-                                    {/* Botón side menu (opcional)
-                                    <button 
-                                        type="button" 
-                                        className="icon-btn sideMenuToggler d-none d-lg-block"
-                                        onClick={handleSideMenuToggle}
-                                    >
-                                        <img src="/assets/img/icon/grid.svg" alt="Menu" />
-                                    </button>
-                                    */}
-
+                                <div className="header-button">                                    
                                     {/* Botón cotizar */}
                                     <button
                                         className="th-btn style1 th-radius"

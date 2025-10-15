@@ -99,7 +99,7 @@ const Footer = () => {
                                             />
                                         </Link>
                                     </div>
-                                    <p className="about-text">
+                                    <p className="about-text text-start">
                                         Somos especialistas en la fabricación de tarimas, embalajes y
                                         empaques industriales de madera, diseñados para garantizar la
                                         integridad de sus productos en toda la cadena de suministro.
@@ -124,7 +124,7 @@ const Footer = () => {
                         {/* Columna 2: Enlaces Rápidos */}
                         <div className="col-md-6 col-xl-auto">
                             <div className="widget widget_nav_menu footer-widget">
-                                <h3 className="widget_title">Enlaces</h3>
+                                <h3 className="widget_title text-start">Enlaces</h3>
                                 <div className="menu-all-pages-container">
                                     <ul className="menu">
                                         {enlacesRapidos.map((enlace, index) => (
@@ -145,7 +145,7 @@ const Footer = () => {
                         {/* Columna 3: Nuestros Servicios */}
                         <div className="col-md-6 col-xl-auto">
                             <div className="widget widget_nav_menu footer-widget">
-                                <h3 className="widget_title">Nuestros Servicios</h3>
+                                <h3 className="widget_title text-start">Nuestros Servicios</h3>
                                 <div className="menu-all-pages-container">
                                     <ul className="menu">
                                         {servicios.map((servicio, index) => (
@@ -166,15 +166,15 @@ const Footer = () => {
                         {/* Columna 4: Contacto */}
                         <div className="col-md-6 col-xl-auto">
                             <div className="widget footer-widget">
-                                <h3 className="widget_title">Contáctanos</h3>
+                                <h3 className="widget_title text-start">Contáctanos</h3>
                                 <div className="th-widget-about">
-                                    <h4 className="footer-info-title">Ubicación</h4>
+                                    <h4 className="footer-info-title text-start">Ubicación</h4>
                                     <p className="footer-info">
                                         <i className="fas fa-map-marker-alt"></i>
                                         Monterrey, Nuevo León, México
                                     </p>
 
-                                    <h4 className="footer-info-title">Teléfono</h4>
+                                    <h4 className="footer-info-title text-start">Teléfono</h4>
                                     <p className="footer-info">
                                         <i className="fa-sharp fa-solid fa-phone"></i>
                                         <span>
@@ -188,7 +188,7 @@ const Footer = () => {
                                         </span>
                                     </p>
 
-                                    <h4 className="footer-info-title">Correo electrónico</h4>
+                                    <h4 className="footer-info-title text-start">Correo electrónico</h4>
                                     <p className="footer-info">
                                         <i className="fa-sharp fa-solid fa-envelope"></i>
                                         <span>
@@ -208,7 +208,7 @@ const Footer = () => {
                         {/* Columna 5: Galería */}
                         <div className="col-md-6 col-xl-auto">
                             <div className="widget footer-widget">
-                                <h3 className="widget_title">Galería</h3>
+                                <h3 className="widget_title text-start">Galería</h3>
                                 <div className="sidebar-gallery">
                                     {galleryImages.map((image, index) => (
                                         <div key={index} className="gallery-thumb">
