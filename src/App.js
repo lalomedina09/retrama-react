@@ -15,7 +15,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Contact from './pages/Contact/Contact';
 import Solutions from './pages/Solutions';
-import About from './pages/About';
+import About from './pages/About/About';
 
 // Importar estilos globales
 import './App.css';
