@@ -148,8 +148,7 @@ const Header = () => {
                                         className="th-btn style1 th-radius"
                                         onClick={handleCotizarClick}
                                     >
-                                        <span className="btn-text" data-back="Cotizar" data-front="Cotizar">
-                                            Cotizar
+                                        <span className="btn-text" data-back="WhatsApp" data-front="WhatsApp">
                                         </span>
                                         <i className="fab fa-whatsapp ms-2"></i>
                                     </button>

@@ -31,3 +31,20 @@ code {
     border-radius: 3px;
     color: #333;
 }
+
+/* Estilos para las flechas de navegación del Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #57b33e !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #459c2e !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 24px;
+    font-weight: bold;
+}

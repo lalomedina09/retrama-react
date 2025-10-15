@@ -80,7 +80,6 @@ const Industries = () => {
                                 }}
                             >
                                 <span className="btn-text" data-back="Ver Más" data-front="Ver Más">
-                                    Ver Más
                                 </span>
                                 <i className="fa-regular fa-arrow-right ms-2"></i>
                             </a>
@@ -130,7 +129,7 @@ const Industries = () => {
                                             onClick={(e) => handleViewDetails(e, industry.title)}
                                         >
                                             <span className="btn-text" data-back="Ver Detalles" data-front="Ver Detalles">
-                                                Ver Detalles
+                                                
                                             </span>
                                             <i className="fa-regular fa-arrow-right ms-2"></i>
                                         </a>

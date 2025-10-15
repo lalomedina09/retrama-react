@@ -17,7 +17,7 @@ const Hero = () => {
     const slides = [
         {
             id: 1,
-            bg: "assets/img/hero/bg-4.jpg",
+            bg: "assets/img/hero/bg-2.jpg",
             title: "Fabricación y comercialización",
             text: "RETRAMA es una empresa especializada en la fabricación y comercialización de tarimas de madera de alta calidad.",
             buttonText: "Solicitar cotización",
@@ -76,7 +76,10 @@ const Hero = () => {
                             <div className="hero-inner">
                                 <div
                                     className="th-hero-bg"
-                                    style={{ backgroundImage: `url(${slide.bg})` }}
+                                    style={{
+                                        backgroundImage: `url(${slide.bg})`,
+                                        backgroundSize: 'cover'
+                                    }}
                                 ></div>
                                 <div className="container">
                                     <div className="hero-style3">
