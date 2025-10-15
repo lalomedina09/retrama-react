@@ -22,6 +22,7 @@ const Contact = () => {
     };
 
     return (
+        
         <main className="page-contact">
             <div className="container">
                 <h1>Contacto</h1>
