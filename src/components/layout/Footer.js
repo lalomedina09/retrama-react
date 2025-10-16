@@ -28,9 +28,9 @@ const Footer = () => {
     // Datos para mapear
     const enlacesRapidos = [
         { to: "/nosotros", text: "Nosotros" },
-        { to: "/soluciones", text: "Soluciones" },
-        { to: "/industrias", text: "Industrias" },
-        { to: "/noticias", text: "Noticias" },
+        { to: "/preguntas-frecuentes", text: "FAQ" },
+        { to: "/productos/tarimas-nuevas", text: "Tarimas nuevas" },
+        { to: "/productos/tarimas-medida", text: "Tarimas a la medida" },
         { to: "/contacto", text: "Contáctanos" }
     ];
 

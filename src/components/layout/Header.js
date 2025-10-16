@@ -109,10 +109,11 @@ const Header = () => {
                                                 <li><Link to="/industrias/telecomunicaciones">Telecomunicaciones</Link></li>
                                             </ul>
                                         </li>
-
+                                        {/*
                                         <li className={isActiveLink('/soluciones')}>
                                             <Link to="/soluciones">Soluciones</Link>
                                         </li>
+                                        */}
                                         <li className={isActiveLink('/preguntas-frecuentes')}>
                                             <Link to="/preguntas-frecuentes">FAQ</Link>
                                         </li>
