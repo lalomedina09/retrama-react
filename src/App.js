@@ -53,10 +53,10 @@ function App() {
 
 
                     {/* Rutas de productos */}
-                    <Route path="/productos/producto1" element={<Product1 />} />
-                    <Route path="/productos/producto2" element={<Product2 />} />
-                    <Route path="/productos/producto3" element={<Product3 />} />
-                    <Route path="/productos/producto4" element={<Product4 />} />
+                    <Route path="/productos/tarimas-nuevas" element={<Product1 />} />
+                    <Route path="/productos/tarimas-medida" element={<Product2 />} />
+                    <Route path="/productos/tarimas-reacondicionadas" element={<Product3 />} />
+                    <Route path="/productos/tarimas-hibridas" element={<Product4 />} />
                     
                     
                     {/* Rutas de industrias */}
