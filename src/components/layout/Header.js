@@ -73,7 +73,7 @@ const Header = () => {
                                             </a>
                                             <ul className="sub-menu">
                                                 <li>
-                                                    <Link to="/productos/tarimas-nuevas">Tarimas Nuevas</Link>
+                                                    <Link to="/productos/producto1">Tarimas Nuevas</Link>
                                                 </li>
                                                 <li>
                                                     <Link to="/productos/tarimas-medida">Tarimas a la medida</Link>

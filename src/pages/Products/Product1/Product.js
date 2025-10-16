@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/layout/Header';
+import Header from '../../../components/layout/Header';
 import ProductBreadcumb from './ProductBreadcumb';
 import ProductContent from './ProductContent';
 import ProductSidebar from './ProductSidebar';
