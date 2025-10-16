@@ -1,18 +1,15 @@
 import React from 'react';
-
 import Header from '../../components/layout/Header';
-/*
-import AboutBreadcumb from './AboutBreadcumb';
-import AboutContent from './AboutContent';
-import ProcessSection from './ProcessSection';
-import WhyChooseUs from './WhyChooseUs';
-*/
+import FAQBreadcumb from './FAQBreadcumb';
+import FAQContent from './FAQContent';
+
 const FAQ = () => {
     return (
         <>
             <Header />
             <main>
-                
+                <FAQBreadcumb />
+                <FAQContent />
             </main>
         </>
     );
