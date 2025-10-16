@@ -12,12 +12,18 @@ import Footer from './components/layout/Footer';
 
 // Páginas (ahora importando los componentes reales)
 import Home from './pages/Home';
-import Products from './pages/Products';
+//import Products from './pages/Products';
 import Solutions from './pages/Solutions';
 
 import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
 import FAQ from './pages/FAQ/FAQ';
+
+//Products
+import Product1 from './pages/Products/Product1/Product';
+
+//Industries
+
 
 // Importar estilos globales
 import './App.css';
@@ -36,11 +42,19 @@ function App() {
                 {/* Rutas de la aplicación */}
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/productos" element={<Products />} />
+                    
                     <Route path="/soluciones" element={<Solutions />} />
                     <Route path="/nosotros" element={<About />} />
                     <Route path="/preguntas-frecuentes" element={<FAQ />} />
                     <Route path="/contacto" element={<Contact />} />
+
+
+                    {/* Rutas de productos */}
+                    <Route path="/productos/producto1" element={<Product1 />} />
+                    
+                    
+                    {/* Rutas de industrias */}
+
                 </Routes>
 
                 {/* Componentes globales del footer */}
