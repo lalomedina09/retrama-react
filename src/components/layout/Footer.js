@@ -35,11 +35,11 @@ const Footer = () => {
     ];
 
     const servicios = [
-        { to: "/soluciones/compra-tarimas", text: "Compra de Tarimas" },
-        { to: "/soluciones/reparacion-tarimas", text: "Reparación de Tarimas" },
-        { to: "/soluciones/norma-144", text: "Cumplimiento Norma 144" },
-        { to: "/soluciones/tarimas-hibridas", text: "Tarimas Híbridas" },
-        { to: "/soluciones/tarimas-medida", text: "Tarimas a la Medida" }
+        { to: "/contacto", text: "Compra de Tarimas" },
+        { to: "/contacto", text: "Reparación de Tarimas" },
+        { to: "/contacto", text: "Cumplimiento Norma 144" },
+        { to: "/productos/tarimas-hibridas", text: "Tarimas Híbridas" },
+        { to: "/productos/tarimas-medida", text: "Tarimas a la Medida" }
     ];
 
     const galleryImages = [
