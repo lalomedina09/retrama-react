@@ -16,27 +16,27 @@ const Industries = () => {
             text: "Tarimas sanitarias y embalajes especializados para el manejo seguro de productos alimenticios, cumpliendo con normativas de higiene."
         },
         {
-            image: "/assets/img/service/service_2_2.jpg",
+            image: "/assets/img/industries/aeronatica.jpeg",
             title: "Aeronáutica",
             text: "Soluciones de empaque y embalaje para componentes aeronáuticos, garantizando protección máxima durante el transporte internacional."
         },
         {
-            image: "/assets/img/service/service_2_3.jpg",
+            image: "/assets/img/industries/automotriz.jpg",
             title: "Automotriz",
             text: "Tarimas robustas para el transporte de autopartes y componentes automotrices, diseñadas para soportar cargas pesadas."
         },
         {
-            image: "/assets/img/service/service_2_1.jpg",
+            image: "/assets/img/industries/construccion.jpg",
             title: "Construcción",
             text: "Embalajes resistentes para materiales de construcción, herramientas y equipos pesados del sector construcción."
         },
         {
-            image: "/assets/img/service/service_2_2.jpg",
+            image: "/assets/img/industries/electronica.jpg",
             title: "Electrónica",
             text: "Tarimas y huacales especializados para la protección de equipos electrónicos sensibles durante el almacenamiento y transporte."
         },
         {
-            image: "/assets/img/service/service_2_3.jpg",
+            image: "/assets/img/industries/energy.jpg",
             title: "Energía",
             text: "Soluciones de empaque para componentes de energía renovable, transformadores y equipos del sector energético."
         }
