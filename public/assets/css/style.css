@@ -14659,8 +14659,6 @@ span.select2-selection.select2-selection--single:focus {
 .contact-map iframe {
   width: 100%;
   height: 659px;
-  -webkit-filter: grayscale(0.9);
-          filter: grayscale(0.9);
   border-radius: 30px;
   /* Medium devices */
 }

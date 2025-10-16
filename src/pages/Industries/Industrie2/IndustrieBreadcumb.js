@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const ProductBreadcumb = () => {
+
+const IndustrieBreadcumb = () => {
     return (
-        <div className="breadcumb-wrapper" 
+        <div className="breadcumb-wrapper"
             style={{
                 position: "relative",
                 backgroundImage: "url('/assets/img/bg/breadcumb-bg.jpg')"
@@ -12,16 +13,15 @@ const ProductBreadcumb = () => {
             <div className="overlay-grey" />
             <div className="container" style={{ position: "relative", zIndex: 2 }}>
                 <div className="breadcumb-content">
-                    <h1 className="breadcumb-title">Tarimas Nuevas</h1>
+                    <h1 className="breadcumb-title">Industria Aeronáutica</h1>
                     <ul className="breadcumb-menu">
                         <li><Link to="/">Inicio</Link></li>
-                        <li>Tarimas Nuevas</li>
+                        <li>Industria Aeronáutica</li>
                     </ul>
                 </div>
             </div>
         </div>
-        
     );
 };
 
-export default ProductBreadcumb;
+export default IndustrieBreadcumb;

@@ -8,29 +8,19 @@ const ProductBreadcumb = () => {
                         position: "relative",
                         backgroundImage: "url('/assets/img/bg/breadcumb-bg.jpg')"
                     }}
-                >            
-                    {/* Overlay gris */}
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            background: "rgba(30, 29, 29, 0.86)",
-                            zIndex: 1
-                        }}
-                    />
-                    <div className="container" style={{ position: "relative", zIndex: 2 }}>
-                        <div className="breadcumb-content">
-                            <h1 className="breadcumb-title">Tarimas Híbridas</h1>
-                            <ul className="breadcumb-menu">
-                                <li><Link to="/">Inicio</Link></li>
-                                <li>Tarimas Híbridas</li>
-                            </ul>
-                        </div>
+            >            
+            {/* Overlay gris */}
+            <div className="overlay-grey" />
+                <div className="container" style={{ position: "relative", zIndex: 2 }}>
+                    <div className="breadcumb-content">
+                        <h1 className="breadcumb-title">Tarimas Híbridas</h1>
+                        <ul className="breadcumb-menu">
+                            <li><Link to="/">Inicio</Link></li>
+                            <li>Tarimas Híbridas</li>
+                        </ul>
                     </div>
                 </div>
+        </div>
     );
 };
 

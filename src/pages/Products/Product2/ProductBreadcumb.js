@@ -9,17 +9,7 @@ const ProductBreadcumb = () => {
                     }}
                 >            
                     {/* Overlay gris */}
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            width: "100%",
-                            height: "100%",
-                            background: "rgba(30, 29, 29, 0.86)",
-                            zIndex: 1
-                        }}
-                    />
+                <div className="overlay-grey" />
                     <div className="container" style={{ position: "relative", zIndex: 2 }}>
                         <div className="breadcumb-content">
                             <h1 className="breadcumb-title">Tarimas a la medida</h1>

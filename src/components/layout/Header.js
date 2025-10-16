@@ -105,15 +105,10 @@ const Header = () => {
                                                 <li><Link to="/industrias/construccion">Construcción</Link></li>
                                                 <li><Link to="/industrias/electronica">Electrónica</Link></li>
                                                 <li><Link to="/industrias/energia">Energía</Link></li>
-                                                <li><Link to="/industrias/medico">Sector Médico</Link></li>
+                                                <li><Link to="/industrias/sector-medico">Sector Médico</Link></li>
                                                 <li><Link to="/industrias/telecomunicaciones">Telecomunicaciones</Link></li>
                                             </ul>
                                         </li>
-                                        {/*
-                                        <li className={isActiveLink('/soluciones')}>
-                                            <Link to="/soluciones">Soluciones</Link>
-                                        </li>
-                                        */}
                                         <li className={isActiveLink('/preguntas-frecuentes')}>
                                             <Link to="/preguntas-frecuentes">FAQ</Link>
                                         </li>
