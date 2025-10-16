@@ -21,6 +21,9 @@ import FAQ from './pages/FAQ/FAQ';
 
 //Products
 import Product1 from './pages/Products/Product1/Product';
+import Product2 from './pages/Products/Product2/Product';
+import Product3 from './pages/Products/Product3/Product';
+import Product4 from './pages/Products/Product4/Product';
 
 //Industries
 
@@ -51,6 +54,9 @@ function App() {
 
                     {/* Rutas de productos */}
                     <Route path="/productos/producto1" element={<Product1 />} />
+                    <Route path="/productos/producto2" element={<Product2 />} />
+                    <Route path="/productos/producto3" element={<Product3 />} />
+                    <Route path="/productos/producto4" element={<Product4 />} />
                     
                     
                     {/* Rutas de industrias */}
