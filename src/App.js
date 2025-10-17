@@ -32,12 +32,24 @@ import Industrie2 from './pages/Industries/Industrie2/Industrie';
 // Importar estilos globales
 import './App.css';
 
+/**
+ * @component App
+ * @description Componente principal de la aplicación que maneja el enrutamiento y la estructura base.
+ * Incluye componentes globales como el preloader, menús, buscador y cursor personalizado.
+ * Gestiona todas las rutas de la aplicación incluyendo:
+ * - Páginas principales (Home, Solutions, About, FAQ, Contact)
+ * - Sección de productos (diferentes tipos de tarimas)
+ * - Sección de industrias (alimenticia, aeronáutica, automotriz, etc.)
+ * También incluye componentes globales del footer y botón de scroll.
+ * 
+ * @returns {JSX.Element} Retorna el componente principal envuelto en un Router con toda la estructura de la aplicación
+ */
 function App() {
     return (
         <Router>
             <div className="App">
                 {/* Componentes globales */}
-                <Preloader />
+                {/*<Preloader />*/}
                 <SideMenu />
                 <MobileMenu />
                 <SearchBox />
