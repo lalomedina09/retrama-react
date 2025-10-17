@@ -15,7 +15,9 @@ const ContactInfo = () => {
                             </div>
                             <div className="media-body text-start">
                                 <h5 className="box-title">Dirección</h5>
-                                <p className="box-text">12 Division Park, SKY 12546. Berlín MA 2721, EE.UU.</p>
+                                <p className="box-text">
+                                    Triángulos 100, Arco Vial, 66000 Parque Industrial Cdad. Mitras, N.L.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -27,8 +29,8 @@ const ContactInfo = () => {
                             <div className="media-body text-start">
                                 <h5 className="box-title">Teléfono de Contacto</h5>
                                 <p className="box-text">
-                                    <a href="tel:+25862323258">Móvil: +258 6232 3258</a>
-                                    <a href="mailto:help@solak.com">Correo: help@solak.com</a>
+                                    <a href="tel:+25862323258">Móvil: +52 1234 5678</a>
+                                    <a href="mailto:hola@retrama.com.mx">Correo: hola@retrama.com.mx</a>
                                 </p>
                             </div>
                         </div>

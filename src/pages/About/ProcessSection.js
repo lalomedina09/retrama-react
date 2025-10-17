@@ -5,26 +5,26 @@ const ProcessSection = () => {
         {
             number: "01",
             image: "assets/img/process/process_1_1.jpg",
-            title: "Consultation & Site Assessment",
-            description: "We begin with an in-depth consultation to understand your energy needs and goals. Our team then conducts."
+            title: "Consulta y Evaluación de Necesidades",
+            description: "Iniciamos con una consulta detallada para entender sus requerimientos específicos de almacenamiento y logística. Nuestro equipo evalúa el tipo de productos, peso, medidas y condiciones de uso para recomendar la tarima ideal."
         },
         {
             number: "02",
             image: "assets/img/process/process_1_2.jpg",
-            title: "Custom System Design & Planning",
-            description: "Custom system design and planning typically involves creating tailored solutions to meet specific needs"
+            title: "Diseño y Cotización Personalizada",
+            description: "Desarrollamos un diseño a medida según sus necesidades específicas. Cotizamos tarimas estándar o personalizadas, considerando tipo de madera, tratamientos especiales y medidas requeridas para su operación."
         },
         {
             number: "03",
             image: "assets/img/process/process_1_3.jpg",
-            title: "Professional Solar Installation",
-            description: "Assess roof space, tilt, and orientation (for rooftop installations). Evaluate ground space and shading"
+            title: "Fabricación y Control de Calidad",
+            description: "Procesamos la madera seleccionada con los más altos estándares. Aplicamos tratamientos térmicos y de fumigación cuando sea necesario, garantizando durabilidad y cumplimiento de normas internacionales de calidad."
         },
         {
             number: "04",
             image: "assets/img/process/process_1_4.jpg",
-            title: "Monitoring & Ongoing Support",
-            description: "Effective monitoring and ongoing support are critical for ensuring a solar energy systems optimal"
+            title: "Entrega y Soporte Continuo",
+            description: "Coordinamos la logística de entrega en toda la República Mexicana. Brindamos seguimiento post-venta y asesoría técnica para asegurar el máximo rendimiento de sus tarimas en sus operaciones diarias."
         }
     ];
 
@@ -34,8 +34,8 @@ const ProcessSection = () => {
                 <div className="row justify-content-center">
                     <div className="col-xxl-5 col-xl-7">
                         <div className="title-area text-center pe-xl-5 ps-xl-5">
-                            <span className="sub-title">Our Working Process</span>
-                            <h2 className="sec-title">How We Work Process In Solar Energy</h2>
+                            <span className="sub-title">Nuestro Proceso de Trabajo</span>
+                            <h2 className="sec-title">Cómo Trabajamos en la Fabricación de Tarimas</h2>
                         </div>
                     </div>
                 </div>

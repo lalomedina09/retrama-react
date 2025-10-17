@@ -198,7 +198,7 @@ const FAQContent = () => {
                                 Encuentre respuestas a las dudas más comunes sobre nuestros productos de tarimas y estibas de madera. Desde tipos de madera y medidas estándar, hasta tratamientos especiales, capacidad de carga y opciones de entrega, aquí aclaramos todo lo que necesita saber para tomar la mejor decisión para su negocio.
                             </p>
                             <div className="text-center text-xl-center">
-                                <Link to="/contact" className="th-btn th-icon">
+                                <Link to="/contacto" className="th-btn th-icon">
                                     <span className="btn-text" data-back="Contactanos" data-front="Contactanos"></span>
                                     <i className="fa-regular fa-arrow-right ms-2"></i>
                                 </Link>

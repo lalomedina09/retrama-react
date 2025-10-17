@@ -4,26 +4,26 @@ const WhyChooseUs = () => {
     const features = [
         {
             icon: "assets/img/icon/about_3_1.svg",
-            title: "Professional Solar Expert",
-            description: "Solar panels, also referred to as solar modules, are made up of multiple solar cells arranged in a grid. They are installed on rooftops, solar farms, and other suitable."
+            title: "Expertos en Tarimas de Madera",
+            description: "Contamos con años de experiencia especializada en la fabricación de tarimas de madera. Nuestro equipo técnico domina todos los procesos desde la selección de maderas hasta los tratamientos especializados para cada industria."
         },
         {
             icon: "assets/img/icon/about_3_2.svg",
-            title: "24/7 Customer Support",
-            description: "Solar panels, also referred to as solar modules, are made up of multiple solar cells arranged in a grid. They are installed on rooftops, solar farms, and other suitable."
+            title: "Soporte al Cliente Personalizado",
+            description: "Ofrecemos atención personalizada y seguimiento continuo a cada proyecto. Nuestros asesores están disponibles para garantizar que sus tarimas cumplan exactamente con sus requerimientos operativos y logísticos."
         }
     ];
 
     const stats = [
         {
             image: "assets/img/normal/choose_2_1.jpg",
-            number: "3,600",
-            text: "We have over 3,600+ Happy Customers"
+            number: "15,000",
+            text: "Hemos fabricado más de 15,000+ tarimas para clientes satisfechos"
         },
         {
             image: "assets/img/normal/choose_2_2.jpg",
-            number: "3,650",
-            text: "Customers are served by the Solar Power Energy department"
+            number: "500",
+            text: "Empresas confían en nuestra calidad y servicio para sus operaciones"
         }
     ];
 
@@ -34,12 +34,12 @@ const WhyChooseUs = () => {
                     <div className="col-xl-5">
                         <div className="space-extra">
                             <div className="title-area mb-30">
-                                <span className="sub-title">Why Choose Us</span>
-                                <h2 className="sec-title sec-title2 text-white">Switch to Solar Sustainable, Affordable, & Reliable Energy</h2>
+                                <span className="sub-title">¿Por Qué Elegirnos?</span>
+                                <h2 className="sec-title sec-title2 text-white">Tarimas de Madera: Duraderas, Económicas y Confiables</h2>
                                 <p className="sec-desc2">
-                                    Our advanced energy storage solutions allow you to store excess energy generated from
-                                    renewable sources like solar and wind. This enables a constant, uninterrupted power supply,
-                                    providing energy independence.
+                                    En RETRAMA nos especializamos en la fabricación de tarimas de madera que combinan durabilidad,
+                                    resistencia y costo-beneficio ideal. Utilizamos maderas de primera calidad y procesos certificados
+                                    que garantizan productos confiables para cualquier necesidad logística e industrial.
                                 </p>
                             </div>
                             <div className="choose-feature2-wrap">

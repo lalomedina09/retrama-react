@@ -16,7 +16,7 @@ const Contact = () => {
                 <ContactBreadcumb />
                 <ContactInfo />
                 <ContactForm />
-                <ContactBrands />
+                {/*<ContactBrands /> comentado temporal */}
             </main>
         </>
     );
