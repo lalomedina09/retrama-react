@@ -4,71 +4,65 @@ const ProductContent = () => {
     const serviceProcess = [
         {
             icon: "assets/img/icon/process_2_1.svg",
-            title: "Project Planning",
-            description: "Keep your solar system in top condition with our maintenance and repair services."
+            title: "Selección de Madera",
+            description: "Seleccionamos cuidadosamente maderas de pino y ocote de primera calidad, evaluando cada pieza para garantizar durabilidad y resistencia óptima."
         },
         {
             icon: "assets/img/icon/process_2_2.svg",
-            title: "Start Work",
-            description: "Keep your solar system in top condition with our maintenance and repair services."
+            title: "Proceso de Fabricación",
+            description: "Cortamos, cepillamos y ensamblamos las tarimas con precisión, utilizando clavado especializado que asegura máxima estabilidad y carga."
         },
         {
             icon: "assets/img/icon/process_2_3.svg",
-            title: "Project Finished",
-            description: "Keep your solar system in top condition with our maintenance and repair services."
+            title: "Control de Calidad",
+            description: "Cada tarima pasa por rigurosos controles de calidad, verificando medidas, resistencia y aplicando tratamientos especiales cuando son requeridos."
         }
     ];
 
     return (
         <div className="page-single">
             <div className="page-img global-img mb-35">
-                <img src="assets/img/service/service_details.jpg" alt="Service Image" />
+                <img src="assets/img/service/service_details.jpg" alt="Fabricación de Tarimas" />
             </div>
             <div className="page-content">
-                <h2 className="h2 page-title mb-20">Solar Panel Energy Installation</h2>
+                <h2 className="h2 page-title mb-20">Fabricación de Tarimas Nuevas de Madera</h2>
                 <p className="blog-text">
-                    We provide turnkey solar solutions, from design and installation to
-                    monitoring and maintenance. Whether for homes, businesses, or communities, our solar energy
-                    systems offer a sustainable, cost-effective power source that reduces carbon footprints and
-                    energy bills. Our advanced energy storage solutions allow you to store excess energy
-                    generated from renewable sources like solar and wind. This enables a constant, uninterrupted
-                    power supply, providing energy independence and resilience even during outages. Capture the
-                    Earth's natural heat with our geothermal energy systems. We offer expert design,
-                    installation, and maintenance of geothermal heating and cooling systems that are
-                    energy-efficient, eco-friendly, and cost-effective over time.
+                    En RETRAMA nos especializamos en la fabricación de tarimas nuevas de madera de la más alta calidad.
+                    Utilizamos maderas seleccionadas como pino y ocote, sometidas a procesos de secado y tratamiento
+                    que garantizan durabilidad, resistencia y cumplimiento con las normas internacionales. Nuestras
+                    tarimas están diseñadas para satisfacer las necesidades de almacenamiento y logística de diversos
+                    sectores industriales.
                 </p>
                 <p className="blog-text mb-30">
-                    Our team of experts provides in-depth consultations to help you
-                    explore the best renewable energy options for your property. We assess energy needs, budget,
-                    and location to develop customized, sustainable solutions for homes, businesses, and public
-                    institutions. Maximize your energy efficiency with our smart energy management systems. We
-                    offer tools.
+                    Ofrecemos soluciones completas desde el diseño hasta la entrega, incluyendo tratamientos térmicos
+                    y de fumigación para exportación. Cada tarima es fabricada con precisión para asegurar capacidad
+                    de carga óptima, estabilidad en el apilamiento y larga vida útil, incluso en las condiciones
+                    más demandantes de almacenamiento y transporte.
                 </p>
 
-                <h4 className="mt-35">Service Benefits</h4>
+                <h4 className="mt-35">Beneficios de Nuestras Tarimas</h4>
                 <p className="blog-text mb-30">
-                    We offer carbon offset services to help individuals and businesses
-                    reduce their carbon footprint. By investing in certified renewable energy projects, you can
-                    offset emissions and contribute to a cleaner, more sustainable environment. Support
-                    sustainable transportation with our EV charging station installation service. Our team
-                    provides home, business, and public charging station solutions powered by renewable energy,
-                    promoting greener mobility.
+                    Nuestras tarimas de madera ofrecen ventajas competitivas significativas: son económicas,
+                    ecológicas, reciclables y altamente resistentes. La madera proporciona amortiguación natural
+                    contra impactos, protegiendo sus productos durante el manejo y transporte. Además, ofrecen
+                    excelente tracción para montacargas y son fácilmente reparables, extendiendo su vida útil
+                    y reduciendo costos a largo plazo.
                 </p>
 
                 <div className="row gy-4 gx-40">
                     <div className="col-xl-4">
                         <div className="checklist style6">
                             <ul>
-                                <li>Expertise and Experience</li>
-                                <li>Cost Efficiency</li>
-                                <li>Time Savings</li>
-                                <li>Quality Assurance</li>
-                                <li>Regulatory Compliance</li>
-                                <li>Customization and Flexibility</li>
-                                <li>Post-Solar Support</li>
-                                <li>Single Point of Accountability</li>
-                                <li>Safety Protocols</li>
-                                <li>Innovative Solutions</li>
+                                <li>Materiales de Primera Calidad</li>
+                                <li>Resistencia y Durabilidad</li>
+                                <li>Capacidad de Carga Optimizada</li>
+                                <li>Tratamientos Especializados</li>
+                                <li>Medidas Estándar y Personalizadas</li>
+                                <li>Cumplimiento de Normas Internacionales</li>
+                                <li>Logística de Entrega Nacional</li>
+                                <li>Asesoría Técnica Especializada</li>
+                                <li>Precios Competitivos</li>
+                                <li>Soporte Post-Venta</li>
                             </ul>
                         </div>
                     </div>
@@ -76,21 +70,24 @@ const ProductContent = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="page-img style1 global-img">
-                                    <img className="w-100" src="assets/img/service/service_inner_1.jpg" alt="service" />
+                                    <img className="w-100" src="assets/img/service/service_inner_1.jpg" alt="Proceso de Fabricación" />
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="page-img style1 global-img">
-                                    <img className="w-100" src="assets/img/service/service_inner_2.jpg" alt="service" />
+                                    <img className="w-100" src="assets/img/service/service_inner_2.jpg" alt="Tarimas Terminadas" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <h4 className="mt-20">Work Process</h4>
+                <h4 className="mt-20">Proceso de Fabricación</h4>
                 <p className="blog-text mb-35">
-                    Our commercial solar solutions help businesses save on energy costs and reduce carbon footprints. We handle complex, large-scale installations tailored to each company's unique energy needs, helping businesses become more sustainable and energy-efficient. Solar inverters convert the DC electricity generated by solar panels into AC power that's usable in your home or business.
+                    Nuestro proceso de fabricación combina técnicas tradicionales con tecnología moderna para
+                    garantizar tarimas de máxima calidad. Desde la selección de la materia prima hasta el
+                    embalaje final, cada etapa está supervisada por nuestro equipo de expertos para asegurar
+                    que cada tarima cumpla con los más altos estándares de la industria.
                 </p>
 
                 <div className="service-process-wrap">
