@@ -19,7 +19,7 @@ const ProductBreadcumb = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
+        </div>
     );
 };
 
