@@ -12,10 +12,10 @@ const FAQBreadcumb = () => {
                                 <div className="overlay-grey" />
                                     <div className="container" style={{ position: "relative", zIndex: 2 }}>
                                         <div className="breadcumb-content">
-                                            <h1 className="breadcumb-title">FAQs</h1>
+                                            <h1 className="breadcumb-title">Preguntas Frecuentes</h1>
                                             <ul className="breadcumb-menu">
                                                 <li><Link to="/">Inicio</Link></li>
-                                                <li>FAQs</li>
+                                                <li>Preguntas Frecuentes</li>
                                             </ul>
                                         </div>
                                     </div>
