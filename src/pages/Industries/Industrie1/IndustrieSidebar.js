@@ -4,34 +4,34 @@ import { Link } from 'react-router-dom';
 const IndustrieSidebar = () => {
     const projectInfo = [
         {
-            icon: "fa-solid fa-industry",
+            icon: "fa-solid fa-plane",
             subtitle: "Sector:",
-            title: "Industria Alimenticia"
+            title: "Industria Aeronáutica"
         },
         {
             icon: "fa-solid fa-certificate",
             subtitle: "Certificación:",
-            title: "FDA & USDA"
+            title: "FAA & EASA"
         },
         {
-            icon: "fa-solid fa-warehouse",
+            icon: "fa-solid fa-gears",
             subtitle: "Aplicación:",
-            title: "Almacenamiento Alimentos"
+            title: "Componentes Críticos"
         },
         {
-            icon: "fa-solid fa-temperature-low",
-            subtitle: "Compatibilidad:",
-            title: "Cadena de Frío"
+            icon: "fa-solid fa-weight-hanging",
+            subtitle: "Capacidad:",
+            title: "Hasta 2.5 Toneladas"
         }
     ];
 
     const certifications = [
-        "FDA - Food and Drug Administration",
-        "USDA - United States Department of Agriculture",
-        "NIMF-15 - Tratamiento Térmico",
-        "HACCP - Análisis de Peligros",
-        "ISO 22000 - Seguridad Alimentaria",
-        "ISO 9001 - Calidad"
+        "FAA - Federal Aviation Administration",
+        "EASA - European Union Aviation Safety Agency",
+        "AS9100 - Quality Management Aerospace",
+        "NADCAP - Special Processes Certification",
+        "AS9120 - Aerospace Distributors",
+        "ISO 9001 - Quality Management Systems"
     ];
 
     return (
@@ -52,7 +52,7 @@ const IndustrieSidebar = () => {
             </div>
 
             <div className="widget widget_categories">
-                <h3 className="widget_title">Certificaciones</h3>
+                <h3 className="widget_title">Certificaciones Aeronáuticas</h3>
                 <div className="category-list">
                     {certifications.map((cert, index) => (
                         <div className="category-item" key={index}>
@@ -68,27 +68,38 @@ const IndustrieSidebar = () => {
                 <div className="feature-list">
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span class="text-white">Tratamiento térmico sanitizado</span>
+                        <span className="text-white">Certificación AS9100</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span class="text-white">Superficies lisas y herméticas</span>
+                        <span className="text-white">Protección ESD y antiestática</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span class="text-white">Resistente a humedad y hongos</span>
+                        <span className="text-white">Resistente a fluidos aeronáuticos</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span class="text-white">Capacidad carga 500kg+</span>
+                        <span className="text-white">Sistemas de sujeción certificados</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span class="text-white">Compatible con automatización</span>
+                        <span className="text-white">Trazabilidad completa</span>
+                    </div>
+                    <div className="feature-item mb-2">
+                        <i className="fa-solid fa-check text-success"></i>
+                        <span className="text-white">Puntos de izaje certificados</span>
+                    </div>
+                    <div className="feature-item mb-2">
+                        <i className="fa-solid fa-check text-success"></i>
+                        <span className="text-white">Temperatura -40°C a +80°C</span>
+                    </div>
+                    <div className="feature-item mb-2">
+                        <i className="fa-solid fa-check text-success"></i>
+                        <span className="text-white">Identificación RFID</span>
                     </div>
                 </div>
             </div>
-
         </aside>
     );
 };

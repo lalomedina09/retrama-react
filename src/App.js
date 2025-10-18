@@ -28,7 +28,12 @@ import Product4 from './pages/Products/Product4/Product';
 //Industries
 import Industrie1 from './pages/Industries/Industrie1/Industrie';
 import Industrie2 from './pages/Industries/Industrie2/Industrie';
-
+import Industrie3 from './pages/Industries/Industrie3/Industrie';
+import Industrie4 from './pages/Industries/Industrie4/Industrie';
+import Industrie5 from './pages/Industries/Industrie5/Industrie';
+import Industrie6 from './pages/Industries/Industrie6/Industrie';
+import Industrie7 from './pages/Industries/Industrie7/Industrie';
+import Industrie8 from './pages/Industries/Industrie8/Industrie';
 // Importar estilos globales
 import './App.css';
 
@@ -75,12 +80,12 @@ function App() {
                     {/* Rutas de industrias */}
                     <Route path="/industrias/alimenticia" element={<Industrie1 />} />
                     <Route path="/industrias/aeronautica" element={<Industrie2 />} />
-                    <Route path="/industrias/automotriz" element={<Industrie1 />} />
-                    <Route path="/industrias/construccion" element={<Industrie1 />} />
-                    <Route path="/industrias/electronica" element={<Industrie1 />} />
-                    <Route path="/industrias/energia" element={<Industrie1 />} />
-                    <Route path="/industrias/sector-medico" element={<Industrie1 />} />
-                    <Route path="/industrias/telecomunicaciones" element={<Industrie1 />} />
+                    <Route path="/industrias/automotriz" element={<Industrie3 />} />
+                    <Route path="/industrias/construccion" element={<Industrie4 />} />
+                    <Route path="/industrias/electronica" element={<Industrie5 />} />
+                    <Route path="/industrias/energia" element={<Industrie6 />} />
+                    <Route path="/industrias/sector-medico" element={<Industrie7 />} />
+                    <Route path="/industrias/telecomunicaciones" element={<Industrie8 />} />
 
                 </Routes>
 
