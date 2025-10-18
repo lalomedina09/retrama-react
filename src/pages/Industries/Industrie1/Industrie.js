@@ -12,7 +12,6 @@ const Industrie = () => {
             <main>
                 <IndustrieBreadcumb />
                 <IndustrieContent />
-                <IndustrieBrands />
             </main>
         </>
     );
