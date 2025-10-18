@@ -4,71 +4,66 @@ const ProductContent = () => {
     const serviceProcess = [
         {
             icon: "assets/img/icon/process_2_1.svg",
-            title: "Project Planning",
-            description: "Keep your solar system in top condition with our maintenance and repair services."
+            title: "Diseño y Planificación",
+            description: "Analizamos sus necesidades específicas para diseñar tarimas híbridas que combinen la resistencia del plástico con la versatilidad de la madera."
         },
         {
             icon: "assets/img/icon/process_2_2.svg",
-            title: "Start Work",
-            description: "Keep your solar system in top condition with our maintenance and repair services."
+            title: "Fabricación Personalizada",
+            description: "Utilizamos tecnología avanzada para fabricar tarimas híbridas que optimizan el espacio y maximizan la durabilidad en cada aplicación."
         },
         {
             icon: "assets/img/icon/process_2_3.svg",
-            title: "Project Finished",
-            description: "Keep your solar system in top condition with our maintenance and repair services."
+            title: "Control de Calidad",
+            description: "Cada tarima híbrida pasa por rigurosas pruebas de carga, resistencia y durabilidad para garantizar el máximo rendimiento."
         }
     ];
 
     return (
         <div className="page-single">
             <div className="page-img global-img mb-35">
-                <img src="assets/img/service/service_details.jpg" alt="Service Image" />
+                <img src="assets/img/service/tarimas_hibridas.jpg" alt="Tarimas Híbridas" />
             </div>
             <div className="page-content">
-                <h2 className="h2 page-title mb-20">Solar Panel Energy Installation</h2>
+                <h2 className="h2 page-title mb-20">Tarimas Híbridas de Madera y Plástico</h2>
                 <p className="blog-text">
-                    We provide turnkey solar solutions, from design and installation to
-                    monitoring and maintenance. Whether for homes, businesses, or communities, our solar energy
-                    systems offer a sustainable, cost-effective power source that reduces carbon footprints and
-                    energy bills. Our advanced energy storage solutions allow you to store excess energy
-                    generated from renewable sources like solar and wind. This enables a constant, uninterrupted
-                    power supply, providing energy independence and resilience even during outages. Capture the
-                    Earth's natural heat with our geothermal energy systems. We offer expert design,
-                    installation, and maintenance of geothermal heating and cooling systems that are
-                    energy-efficient, eco-friendly, and cost-effective over time.
+                    Ofrecemos soluciones innovadoras en tarimas híbridas que combinan lo mejor de la madera
+                    y el plástico reciclado. Nuestras tarimas híbridas representan la evolución en el sector
+                    del almacenamiento y transporte, proporcionando una alternativa superior que supera
+                    las limitaciones de los materiales tradicionales. Diseñadas para soportar las condiciones
+                    más exigentes, estas tarimas ofrecen una vida útil excepcionalmente larga.
                 </p>
                 <p className="blog-text mb-30">
-                    Our team of experts provides in-depth consultations to help you
-                    explore the best renewable energy options for your property. We assess energy needs, budget,
-                    and location to develop customized, sustainable solutions for homes, businesses, and public
-                    institutions. Maximize your energy efficiency with our smart energy management systems. We
-                    offer tools.
+                    La estructura híbrida permite una resistencia optimizada a la humedad, plagas y
+                    condiciones climáticas extremas, mientras mantiene la capacidad de carga necesaria
+                    para operaciones logísticas intensivas. Nuestro proceso de fabricación incorpora
+                    plásticos reciclados de alta calidad con refuerzos de madera tratada, creando un
+                    producto final que es tanto funcional como sostenible.
                 </p>
 
-                <h4 className="mt-35">Service Benefits</h4>
+                <h4 className="mt-35">Ventajas de las Tarimas Híbridas</h4>
                 <p className="blog-text mb-30">
-                    We offer carbon offset services to help individuals and businesses
-                    reduce their carbon footprint. By investing in certified renewable energy projects, you can
-                    offset emissions and contribute to a cleaner, more sustainable environment. Support
-                    sustainable transportation with our EV charging station installation service. Our team
-                    provides home, business, and public charging station solutions powered by renewable energy,
-                    promoting greener mobility.
+                    Las tarimas híbridas ofrecen beneficios significativos sobre los modelos tradicionales.
+                    Su diseño inteligente reduce el peso total mientras mantiene la resistencia estructural,
+                    lo que se traduce en ahorros en costos de transporte y manipulación. Además, son
+                    completamente reciclables al final de su vida útil, contribuyendo a una economía
+                    circular y reduciendo el impacto ambiental de sus operaciones logísticas.
                 </p>
 
                 <div className="row gy-4 gx-40">
                     <div className="col-xl-4">
                         <div className="checklist style6">
                             <ul>
-                                <li>Expertise and Experience</li>
-                                <li>Cost Efficiency</li>
-                                <li>Time Savings</li>
-                                <li>Quality Assurance</li>
-                                <li>Regulatory Compliance</li>
-                                <li>Customization and Flexibility</li>
-                                <li>Post-Solar Support</li>
-                                <li>Single Point of Accountability</li>
-                                <li>Safety Protocols</li>
-                                <li>Innovative Solutions</li>
+                                <li>Resistencia superior a la humedad</li>
+                                <li>Inmunes a plagas y hongos</li>
+                                <li>Peso optimizado para transporte</li>
+                                <li>Mayor vida útil que tarimas tradicionales</li>
+                                <li>Materiales 100% reciclables</li>
+                                <li>Capacidad de carga mejorada</li>
+                                <li>Mínimo mantenimiento requerido</li>
+                                <li>Compatibilidad con sistemas automatizados</li>
+                                <li>Resistencia química superior</li>
+                                <li>Certificación internacional de calidad</li>
                             </ul>
                         </div>
                     </div>
@@ -76,21 +71,25 @@ const ProductContent = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="page-img style1 global-img">
-                                    <img className="w-100" src="assets/img/service/service_inner_1.jpg" alt="service" />
+                                    <img className="w-100" src="assets/img/service/tarima_hibrida_1.jpg" alt="Estructura Híbrida" />
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="page-img style1 global-img">
-                                    <img className="w-100" src="assets/img/service/service_inner_2.jpg" alt="service" />
+                                    <img className="w-100" src="assets/img/service/tarima_hibrida_2.jpg" alt="Aplicaciones Industriales" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <h4 className="mt-20">Work Process</h4>
+                <h4 className="mt-20">Nuestro Proceso de Fabricación</h4>
                 <p className="blog-text mb-35">
-                    Our commercial solar solutions help businesses save on energy costs and reduce carbon footprints. We handle complex, large-scale installations tailored to each company's unique energy needs, helping businesses become more sustainable and energy-efficient. Solar inverters convert the DC electricity generated by solar panels into AC power that's usable in your home or business.
+                    Desarrollamos cada tarima híbrida mediante un proceso tecnológicamente avanzado que
+                    asegura la perfecta integración entre los componentes de plástico reciclado y madera
+                    tratada. Desde la selección de materias primas hasta el ensamblaje final, cada etapa
+                    está optimizada para producir tarimas que superan los estándares de la industria
+                    en durabilidad, seguridad y eficiencia operativa.
                 </p>
 
                 <div className="service-process-wrap">
@@ -106,6 +105,14 @@ const ProductContent = () => {
                         </div>
                     ))}
                 </div>
+
+                <h4 className="mt-35">Aplicaciones Ideales</h4>
+                <p className="blog-text mb-30">
+                    Nuestras tarimas híbridas son perfectas para industrias que requieren máxima higiene
+                    como alimentaria y farmacéutica, así como para operaciones en ambientes húmedos o
+                    refrigerados. También son ideales para cadenas de suministro internacionales donde
+                    la durabilidad y el cumplimiento de normativas fitosanitarias son críticos.
+                </p>
             </div>
         </div>
     );
