@@ -4,68 +4,68 @@ import IndustrieSidebar from './IndustrieSidebar';
 const IndustrieContent = () => {
     const projectStats = [
         {
-            number: "FAA",
+            number: "FDA",
             unit: "Cert",
-            label: "Certificación Aeronáutica"
+            label: "Certificación Alimentaria"
         },
         {
-            number: "ISO",
-            unit: "9100",
-            label: "Calidad Aerospace"
+            number: "HACCP",
+            unit: "ISO 22000",
+            label: "Sistema de Inocuidad"
         },
         {
-            number: "2.5",
+            number: "1.5",
             unit: "Tons",
             label: "Capacidad de Carga"
         },
         {
-            number: "0",
-            unit: "Tolerancia",
-            label: "Estándar Defectos"
+            number: "100%",
+            unit: "Lavable",
+            label: "Higiene Total"
         }
     ];
 
     const benefits = [
-        "Cumple normativas FAA y EASA",
-        "Resistencia estructural superior",
-        "Peso optimizado para aviación",
-        "Incombustible y antiestático",
-        "Resistente a fluidos hidráulicos",
-        "Estabilidad dimensional extrema",
-        "Rastreabilidad completa",
-        "Larga vida útil en condiciones críticas",
-        "Compatibilidad con sistemas automatizados"
+        "Cumple normativas FDA y USDA",
+        "Materiales aptos para contacto alimentario",
+        "Resistente a humedad y lavados frecuentes",
+        "Superficies no porosas y anti-bacteriales",
+        "Libre de contaminación cruzada",
+        "Estabilidad en cámaras frigoríficas",
+        "Trazabilidad completa del producto",
+        "Resistente a ácidos y grasas alimentarias",
+        "Diseño para limpieza y sanitización rápida"
     ];
 
     const projectImages = [
-        "assets/img/project/tarimas_aeronautica_1.jpg",
-        "assets/img/project/tarimas_aeronautica_2.jpg",
-        "assets/img/project/tarimas_aeronautica_3.jpg"
+        "assets/img/project/tarimas_alimenticia_1.jpg",
+        "assets/img/project/tarimas_alimenticia_2.jpg",
+        "assets/img/project/tarimas_alimenticia_3.jpg"
     ];
 
     return (
         <section className="space">
             <div className="container">
                 <div className="page-img global-img mb-50">
-                    <img src="assets/img/project/tarimas_industria_aeronautica.jpg" alt="Tarimas en Industria Aeronáutica" />
+                    <img src="assets/img/project/tarimas_industria_alimenticia.jpg" alt="Tarimas en Industria Alimenticia y Bebidas" />
                 </div>
                 <div className="row">
                     <div className="col-xxl-8 col-lg-8">
                         <div className="page-single">
                             <div className="page-content">
-                                <h2 className="page-title">Tarimas Especializadas para la Industria Aeronáutica</h2>
-                                <p>
-                                    Desarrolladas bajo los más estrictos estándares de calidad y seguridad aeronáutica,
-                                    nuestras tarimas están diseñadas específicamente para el manejo, almacenamiento y
-                                    transporte de componentes aeronáuticos críticos. Fabricadas con materiales certificados
-                                    y procesos controlados, garantizan la protección integral de piezas de alta precisión
-                                    y valor.
+                                <h2 className="page-title text-start">Tarimas Especializadas para la Industria Alimenticia y Bebidas</h2>
+                                <p className="text-start">
+                                    Diseñadas bajo los más estrictos estándares de higiene e inocuidad alimentaria,
+                                    nuestras tarimas garantizan la protección integral de alimentos, bebidas e
+                                    ingredientes en toda la cadena de suministro. Fabricadas con materiales certificados
+                                    para contacto alimentario, previenen contaminación cruzada y mantienen la calidad
+                                    de sus productos.
                                 </p>
-                                <p>
-                                    Cada tarima cumple con los requisitos de traceabilidad, limpieza y resistencia
-                                    necesarios para operaciones en hangares, líneas de producción y centros de
-                                    mantenimiento aeronáutico. Nuestros diseños incorporan características anti-vibración
-                                    y protección ESD para componentes electrónicos sensibles.
+                                <p className="text-start">
+                                    Cada tarima cumple con los requisitos HACCP, FDA y USDA para operaciones en
+                                    plantas procesadoras, centros de distribución, supermercados y cámaras frigoríficas.
+                                    Nuestros diseños incorporan características de drenaje, resistencia a lavados
+                                    químicos y compatibilidad con sistemas de limpieza CIP.
                                 </p>
 
                                 <div className="project-box-details">
@@ -81,39 +81,38 @@ const IndustrieContent = () => {
                                     </div>
                                 </div>
 
-                                <h4 className="mt-40 mb-20">Ingeniería y Fabricación Aeronáutica</h4>
-                                <p className="mb-10">
-                                    Nuestro proceso de fabricación sigue los protocolos AS9100, incorporando
-                                    controles dimensionales estrictos y documentación completa de trazabilidad.
-                                    Utilizamos materiales compuestos y aleaciones especiales que garantizan
-                                    la resistencia necesaria para soportar componentes pesados como turbinas,
-                                    alas y sistemas de aviónica, manteniendo un peso optimizado para eficiencia
-                                    en el manejo.
+                                <h4 className="mt-40 mb-20 text-start">Ingeniería para la Inocuidad Alimentaria</h4>
+                                <p className="mb-10 text-start">
+                                    Nuestro proceso de fabricación sigue los protocolos ISO 22000, incorporando
+                                    controles de calidad específicos para la industria alimentaria. Utilizamos
+                                    polímeros de grado alimenticio, aceros inoxidables y materiales compuestos
+                                    que garantizan la resistencia necesaria para soportar productos perecederos,
+                                    líquidos y alimentos procesados, manteniendo condiciones óptimas de higiene.
                                 </p>
 
-                                <p className="mb-40">
-                                    Implementamos sistemas de sujeción personalizados y acolchados protectores
-                                    que previenen daños por vibración durante el transporte. Cada tarima incluye
-                                    puntos de izaje certificados y sistemas de anclaje que cumplen con los
-                                    estándares de seguridad para operaciones con grúas y equipos de manejo
-                                    especializado.
+                                <p className="mb-40 text-start">
+                                    Implementamos esquinas redondeadas y superficies lisas que evitan la acumulación
+                                    de residuos y facilitan la limpieza profunda. Cada tarima incluye sistemas de
+                                    identificación por colores según el tipo de producto y áreas de proceso,
+                                    previniendo contaminación cruzada entre materias primas, productos en proceso
+                                    y terminados.
                                 </p>
 
-                                <h4 className="mt-40 mb-20">Certificaciones y Cumplimiento Normativo</h4>
-                                <p className="mb-10">
-                                    Nuestras tarimas están certificadas bajo los estándares aeronáuticos más
-                                    exigentes, incluyendo FAA (Federal Aviation Administration) y EASA
-                                    (European Union Aviation Safety Agency). Cumplimos con las especificaciones
-                                    NADCAP para procesos especiales y contamos con certificación AS9120 para
-                                    distribución de componentes aeronáuticos.
+                                <h4 className="mt-40 mb-20 text-start">Certificaciones y Cumplimiento Normativo</h4>
+                                <p className="mb-10 text-start">
+                                    Nuestras tarimas están certificadas bajo los estándares alimentarios más
+                                    exigentes, incluyendo FDA (Food and Drug Administration) y USDA (United States
+                                    Department of Agriculture). Cumplimos con las especificaciones GMP (Good
+                                    Manufacturing Practices) y contamos con certificación BRCGS para empaque
+                                    y embalaje alimentario.
                                 </p>
 
-                                <p className="mb-40">
-                                    Todos nuestros materiales cuentan con certificados de conformidad y
-                                    trazabilidad completa desde la materia prima hasta el producto final.
-                                    Implementamos controles de calidad estadísticos (SPC) que garantizan
-                                    cero defectos críticos y mantenemos registros detallados para auditorías
-                                    de clientes y autoridades regulatorias.
+                                <p className="mb-40 text-start">
+                                    Todos nuestros materiales cuentan con certificados de aptitud para contacto
+                                    alimentario y trazabilidad completa desde la materia prima hasta el producto
+                                    final. Implementamos programas de limpieza y sanitización validados que
+                                    garantizan la inocuidad en cada ciclo de uso y mantenemos registros detallados
+                                    para auditorías de clientes y autoridades sanitarias.
                                 </p>
 
                                 <div className="checklist style1 list-three-column mb-20">
@@ -133,31 +132,45 @@ const IndustrieContent = () => {
                     </div>
                 </div>
 
-                <h4 className="mt-40 mb-20">Características Técnicas para Aplicaciones Críticas</h4>
-                <p className="mb-40">
-                    Diseñadas para soportar condiciones extremas, nuestras tarimas presentan resistencia
-                    a temperaturas desde -40°C hasta +80°C, humedad controlada y exposición a químicos
-                    aeronáuticos. Incorporamos sistemas de identificación RFID para gestión automatizada
-                    de inventario y características ESD para protección de componentes electrónicos.
-                    La estructura modular permite configuraciones personalizadas para piezas de diferentes
-                    tamaños y formas, optimizando el espacio en almacenes y durante el transporte.
+                <h4 className="mt-40 mb-20 text-start">Características Técnicas para Entornos Alimentarios</h4>
+                <p className="mb-40 text-start">
+                    Diseñadas para soportar condiciones extremas de humedad, temperaturas de congelación
+                    (-30°C) y procesos de lavado con químicos agresivos. Incorporamos sistemas de
+                    identificación por código de barras y RFID para gestión automatizada de inventario
+                    y trazabilidad de lotes. La estructura modular permite configuraciones personalizadas
+                    para diferentes tipos de alimentos: cárnicos, lácteos, panificación, bebidas y
+                    productos congelados, optimizando el espacio en almacenes y transporte refrigerado.
                 </p>
 
-                <h4 className="mt-40 mb-20">Aplicaciones en la Industria Aeronáutica</h4>
-                <p className="mb-40">
-                    Especialmente diseñadas para el manejo de motores, sistemas de aviónica, componentes
-                    estructurales, trenes de aterrizaje y sistemas hidráulicos. Compatibles con sistemas
-                    de almacenamiento automatizado en hangares y centros de mantenimiento. Utilizadas
-                    por fabricantes OEM, centros MRO (Maintenance, Repair & Overhaul) y líneas aéreas
-                    para garantizar la integridad de componentes críticos a lo largo de toda la cadena
-                    de suministro aeronáutica.
+                <h4 className="mt-40 mb-20 text-start">Aplicaciones en la Industria Alimenticia</h4>
+                <p className="mb-40 text-start">
+                    Especialmente diseñadas para el manejo de productos perecederos, ingredientes
+                    sensibles, bebidas embotelladas y alimentos procesados. Compatibles con sistemas
+                    de almacenamiento en cámaras frigoríficas, cuartos de maduración y líneas de
+                    producción. Utilizadas por procesadores de alimentos, distribuidores mayoristas,
+                    cadenas de retail y servicios de food service para garantizar la inocuidad y
+                    calidad de los productos a lo largo de toda la cadena de frío y suministro.
+                </p>
+
+                <h4 className="mt-40 mb-20 text-start">Soluciones Específicas por Sector</h4>
+                <p className="mb-20 text-start">
+                    <strong>Cárnicos y Avícolas:</strong> Tarimas con resistencia a grasas animales y sistemas de drenaje para líquidos.
+                </p>
+                <p className="mb-20 text-start">
+                    <strong>Lácteos y Bebidas:</strong> Diseños estables para botellas y envases, resistentes a impactos y vibraciones.
+                </p>
+                <p className="mb-20 text-start">
+                    <strong>Panificación y Snacks:</strong> Superficies que previenen la absorción de olores y humedad.
+                </p>
+                <p className="mb-40 text-start">
+                    <strong>Frutas y Verduras:</strong> Sistemas de ventilación para mantener frescura y prevenir maduración prematura.
                 </p>
 
                 <div className="row">
                     {projectImages.map((image, index) => (
                         <div className="col-md-4" key={index}>
                             <div className="page-img global-img">
-                                <img src={image} alt={`Aplicación tarimas aeronáuticas ${index + 1}`} />
+                                <img src={image} alt={`Aplicación tarimas alimenticias ${index + 1}`} />
                             </div>
                         </div>
                     ))}

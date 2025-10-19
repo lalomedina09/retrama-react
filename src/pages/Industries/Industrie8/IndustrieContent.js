@@ -1,71 +1,71 @@
 import React from 'react';
-import IndustrieSidebar from './IndustrieSidebar'; // Agregar esta importación
+import IndustrieSidebar from './IndustrieSidebar';
 
 const IndustrieContent = () => {
     const projectStats = [
         {
-            number: "96",
-            unit: "MW",
-            label: "Capacity"
+            number: "FAA",
+            unit: "Cert",
+            label: "Certificación Aeronáutica"
         },
         {
-            number: "160",
-            unit: "HE",
-            label: "Total Area"
+            number: "ISO",
+            unit: "9100",
+            label: "Calidad Aerospace"
         },
         {
-            number: "2023",
-            unit: "YR",
-            label: "Year Built"
+            number: "2.5",
+            unit: "Tons",
+            label: "Capacidad de Carga"
         },
         {
-            number: "16",
-            unit: "M",
-            label: "USD Dollar Budget"
+            number: "0",
+            unit: "Tolerancia",
+            label: "Estándar Defectos"
         }
     ];
 
     const benefits = [
-        "Renewable Energy Source",
-        "Reduces Electricity Bills",
-        "Low Maintenance Costs",
-        "Environmentally Friendly",
-        "Energy Independence",
-        "Diverse Applications",
-        "Increases Property Value",
-        "Government Incentives",
-        "Adaptable to Varied Locations"
+        "Cumple normativas FAA y EASA",
+        "Resistencia estructural superior",
+        "Peso optimizado para aviación",
+        "Incombustible y antiestático",
+        "Resistente a fluidos hidráulicos",
+        "Estabilidad dimensional extrema",
+        "Rastreabilidad completa",
+        "Larga vida útil en condiciones críticas",
+        "Compatibilidad con sistemas automatizados"
     ];
 
     const projectImages = [
-        "assets/img/project/project_inner_1.jpg",
-        "assets/img/project/project_inner_2.jpg",
-        "assets/img/project/project_inner_3.jpg"
+        "assets/img/project/tarimas_aeronautica_1.jpg",
+        "assets/img/project/tarimas_aeronautica_2.jpg",
+        "assets/img/project/tarimas_aeronautica_3.jpg"
     ];
 
     return (
         <section className="space">
             <div className="container">
                 <div className="page-img global-img mb-50">
-                    <img src="assets/img/project/project_details.jpg" alt="Project Image" />
+                    <img src="assets/img/project/tarimas_industria_aeronautica.jpg" alt="Tarimas en Industria Aeronáutica" />
                 </div>
                 <div className="row">
                     <div className="col-xxl-8 col-lg-8">
                         <div className="page-single">
                             <div className="page-content">
-                                <h2 className="page-title">Bay Area Solar Farm</h2>
-                                <p>
-                                    We offer customized solar systems for homes of all sizes, helping households reduce
-                                    electricity bills and environmental impact. Our team handles every step, from planning and
-                                    permitting to installation and post-installation support. Combine wind energy with other
-                                    renewable sources like solar or hydropower for a balanced, reliable energy mix tailored to
-                                    your needs. Comprehensive wind turbine installation services, including site preparation,
-                                    turbine assembly, and connection to the power grid.
+                                <h2 className="page-title text-start">Tarimas Especializadas para la Industria Aeronáutica</h2>
+                                <p className='text-start'>
+                                    Desarrolladas bajo los más estrictos estándares de calidad y seguridad aeronáutica,
+                                    nuestras tarimas están diseñadas específicamente para el manejo, almacenamiento y
+                                    transporte de componentes aeronáuticos críticos. Fabricadas con materiales certificados
+                                    y procesos controlados, garantizan la protección integral de piezas de alta precisión
+                                    y valor.
                                 </p>
-                                <p>
-                                    Detailed analysis of wind conditions at your site using advanced tools and data modeling.
-                                    This service helps determine the feasibility and potential energy output of wind power
-                                    systems.
+                                <p className='text-start'>
+                                    Cada tarima cumple con los requisitos de traceabilidad, limpieza y resistencia
+                                    necesarios para operaciones en hangares, líneas de producción y centros de
+                                    mantenimiento aeronáutico. Nuestros diseños incorporan características anti-vibración
+                                    y protección ESD para componentes electrónicos sensibles.
                                 </p>
 
                                 <div className="project-box-details">
@@ -81,20 +81,39 @@ const IndustrieContent = () => {
                                     </div>
                                 </div>
 
-                                <h4 className="mt-40 mb-20">Benefits of Project</h4>
-                                <p className="mb-10">
-                                    Our team of experts provides in-depth consultations to help you explore the
-                                    best renewable energy options for your property. We assess energy needs, budget, and
-                                    location to develop customized, sustainable solutions for homes, businesses, and public
-                                    institutions. Maximize your energy efficiency with our smart energy management systems. We
-                                    offer tools and software to monitor, analyze, and optimize your energy consumption, helping
-                                    you make the most of your renewable energy investment.
+                                <h4 className="mt-40 mb-20 text-start">Ingeniería y Fabricación Aeronáutica</h4>
+                                <p className="mb-10 text-start">
+                                    Nuestro proceso de fabricación sigue los protocolos AS9100, incorporando
+                                    controles dimensionales estrictos y documentación completa de trazabilidad.
+                                    Utilizamos materiales compuestos y aleaciones especiales que garantizan
+                                    la resistencia necesaria para soportar componentes pesados como turbinas,
+                                    alas y sistemas de aviónica, manteniendo un peso optimizado para eficiencia
+                                    en el manejo.
                                 </p>
 
-                                <p className="mb-40">
-                                    Our advanced energy storage solutions allow you to store excess energy
-                                    generated from renewable sources like solar and wind. This enables a constant, uninterrupted
-                                    power supply, providing energy independence and resilience even during outages.
+                                <p className="mb-40 text-start">
+                                    Implementamos sistemas de sujeción personalizados y acolchados protectores
+                                    que previenen daños por vibración durante el transporte. Cada tarima incluye
+                                    puntos de izaje certificados y sistemas de anclaje que cumplen con los
+                                    estándares de seguridad para operaciones con grúas y equipos de manejo
+                                    especializado.
+                                </p>
+
+                                <h4 className="mt-40 mb-20 text-start">Certificaciones y Cumplimiento Normativo</h4>
+                                <p className="mb-10 text-start">
+                                    Nuestras tarimas están certificadas bajo los estándares aeronáuticos más
+                                    exigentes, incluyendo FAA (Federal Aviation Administration) y EASA
+                                    (European Union Aviation Safety Agency). Cumplimos con las especificaciones
+                                    NADCAP para procesos especiales y contamos con certificación AS9120 para
+                                    distribución de componentes aeronáuticos.
+                                </p>
+
+                                <p className="mb-40 text-start">
+                                    Todos nuestros materiales cuentan con certificados de conformidad y
+                                    trazabilidad completa desde la materia prima hasta el producto final.
+                                    Implementamos controles de calidad estadísticos (SPC) que garantizan
+                                    cero defectos críticos y mantenemos registros detallados para auditorías
+                                    de clientes y autoridades regulatorias.
                                 </p>
 
                                 <div className="checklist style1 list-three-column mb-20">
@@ -114,21 +133,31 @@ const IndustrieContent = () => {
                     </div>
                 </div>
 
-                <h4 className="mt-40 mb-20">The Challenge Of Project</h4>
-                <p className="mb-40">
-                    We provide turnkey solar solutions, from design and installation to monitoring and maintenance.
-                    Whether for homes, businesses, or communities, our solar energy systems offer a sustainable, cost-effective
-                    power source that reduces carbon footprints and energy bills. Harness the power of the wind with our
-                    customized wind energy solutions. From site assessment to turbine installation, we offer end-to-end
-                    services, including maintenance, to ensure reliable and efficient wind energy production for residential and
-                    commercial clients.
+                <h4 className="mt-40 mb-20 text-start">Características Técnicas para Aplicaciones Críticas</h4>
+                <p className="mb-40 text-start">
+                    Diseñadas para soportar condiciones extremas, nuestras tarimas presentan resistencia
+                    a temperaturas desde -40°C hasta +80°C, humedad controlada y exposición a químicos
+                    aeronáuticos. Incorporamos sistemas de identificación RFID para gestión automatizada
+                    de inventario y características ESD para protección de componentes electrónicos.
+                    La estructura modular permite configuraciones personalizadas para piezas de diferentes
+                    tamaños y formas, optimizando el espacio en almacenes y durante el transporte.
+                </p>
+
+                <h4 className="mt-40 mb-20 text-start">Aplicaciones en la Industria Aeronáutica</h4>
+                <p className="mb-40 text-start">
+                    Especialmente diseñadas para el manejo de motores, sistemas de aviónica, componentes
+                    estructurales, trenes de aterrizaje y sistemas hidráulicos. Compatibles con sistemas
+                    de almacenamiento automatizado en hangares y centros de mantenimiento. Utilizadas
+                    por fabricantes OEM, centros MRO (Maintenance, Repair & Overhaul) y líneas aéreas
+                    para garantizar la integridad de componentes críticos a lo largo de toda la cadena
+                    de suministro aeronáutica.
                 </p>
 
                 <div className="row">
                     {projectImages.map((image, index) => (
                         <div className="col-md-4" key={index}>
                             <div className="page-img global-img">
-                                <img src={image} alt="Project Image" />
+                                <img src={image} alt={`Aplicación tarimas aeronáuticas ${index + 1}`} />
                             </div>
                         </div>
                     ))}

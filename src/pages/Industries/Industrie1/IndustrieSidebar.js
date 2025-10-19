@@ -4,34 +4,45 @@ import { Link } from 'react-router-dom';
 const IndustrieSidebar = () => {
     const projectInfo = [
         {
-            icon: "fa-solid fa-plane",
+            icon: "fa-solid fa-utensils",
             subtitle: "Sector:",
-            title: "Industria Aeronáutica"
+            title: "Alimenticia & Bebidas"
         },
         {
             icon: "fa-solid fa-certificate",
             subtitle: "Certificación:",
-            title: "FAA & EASA"
+            title: "FDA & USDA"
         },
         {
-            icon: "fa-solid fa-gears",
-            subtitle: "Aplicación:",
-            title: "Componentes Críticos"
+            icon: "fa-solid fa-temperature-low",
+            subtitle: "Temperatura:",
+            title: "-30°C a +60°C"
         },
         {
             icon: "fa-solid fa-weight-hanging",
             subtitle: "Capacidad:",
-            title: "Hasta 2.5 Toneladas"
+            title: "Hasta 1.5 Toneladas"
         }
     ];
 
     const certifications = [
-        "FAA - Federal Aviation Administration",
-        "EASA - European Union Aviation Safety Agency",
-        "AS9100 - Quality Management Aerospace",
-        "NADCAP - Special Processes Certification",
-        "AS9120 - Aerospace Distributors",
-        "ISO 9001 - Quality Management Systems"
+        "FDA - Food and Drug Administration",
+        "USDA - United States Department of Agriculture",
+        "HACCP - Hazard Analysis Critical Control Point",
+        "ISO 22000 - Food Safety Management",
+        "BRCGS - Global Standard for Packaging",
+        "GMP - Good Manufacturing Practices"
+    ];
+
+    const applications = [
+        "Procesamiento de Carnes",
+        "Industria Láctea",
+        "Bebidas y Refrescos",
+        "Panificación y Snacks",
+        "Frutas y Verduras",
+        "Productos Congelados",
+        "Alimentos Enlatados",
+        "Distribución Mayorista"
     ];
 
     return (
@@ -52,12 +63,24 @@ const IndustrieSidebar = () => {
             </div>
 
             <div className="widget widget_categories">
-                <h3 className="widget_title">Certificaciones Aeronáuticas</h3>
+                <h3 className="widget_title">Certificaciones Alimentarias</h3>
                 <div className="category-list">
                     {certifications.map((cert, index) => (
-                        <div className="category-item" key={index}>
+                        <div className="category-item text-start mb-2" key={index}>
                             <i className="fa-solid fa-certificate text-theme"></i>
                             <span className="category-name">{cert}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <div className="widget widget_categories">
+                <h3 className="widget_title">Aplicaciones Específicas</h3>
+                <div className="category-list">
+                    {applications.map((app, index) => (
+                        <div className="category-item text-start mb-2" key={index}>
+                            <i className="fa-solid fa-check text-success"></i>
+                            <span className="category-name">{app}</span>
                         </div>
                     ))}
                 </div>
@@ -68,38 +91,38 @@ const IndustrieSidebar = () => {
                 <div className="feature-list">
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Certificación AS9100</span>
+                        <span className="text-white">Grado alimenticio FDA</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Protección ESD y antiestática</span>
+                        <span className="text-white">100% lavable y sanitizable</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Resistente a fluidos aeronáuticos</span>
+                        <span className="text-white">Resistente a ácidos y grasas</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Sistemas de sujeción certificados</span>
+                        <span className="text-white">Superficies no porosas</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Trazabilidad completa</span>
+                        <span className="text-white">Esquinas redondeadas</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Puntos de izaje certificados</span>
+                        <span className="text-white">Sistemas de drenaje</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Temperatura -40°C a +80°C</span>
+                        <span className="text-white">Identificación por colores</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Identificación RFID</span>
+                        <span className="text-white">Trazabilidad de lotes</span>
                     </div>
                 </div>
-            </div>
+            </div>            
         </aside>
     );
 };
