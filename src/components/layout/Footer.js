@@ -242,10 +242,29 @@ const Footer = () => {
             {/* Copyright */}
             <div className="copyright-wrap">
                 <div className="container">
-                    <p className="copyright-text">
-                        Copyright <i className="fal fa-copyright"></i> 2025
-                        <Link to="/"> RETRAMA </Link>. Todos los derechos reservados.
-                    </p>
+                    <div className="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+                        <div className="copyright-text mb-2 mb-md-0">
+                            <span className="text-sm">
+                                © 2025 <Link to="/" className="fw-semibold text-white">RETRAMA</Link>.
+                                Todos los derechos reservados.
+                            </span>
+                        </div>
+
+                        <div className="developer-credit">
+                            <a href="https://www.lemonwebdesign.mx"
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                className="d-flex align-items-center text-decoration-none text-sm">
+                                <span className="me-2 opacity-75 text-white">Desarrollado por</span>
+                                <div className="d-flex align-items-center">
+                                    <img src="/assets/img/lemon-web-positivo.png"
+                                        alt="Lemon Web Design - Agencia de Desarrollo Web"
+                                        width="90"
+                                        className="opacity-90 hover-opacity-100 transition-all" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

@@ -27,7 +27,9 @@ const Header = () => {
     const handleCotizarClick = () => {
         console.log('Redirigir a cotización');
         // Lógica para WhatsApp o formulario de cotización
-        window.open('https://wa.me/528130803998', '_blank');
+        const message = encodeURIComponent('Necesito mas informacion, ');
+        const currentUrl = window.location.href;
+        window.open(`https://wa.me/528130803998?text=${message}${currentUrl}`, '_blank');
     };
 
     const isActiveLink = (path) => {

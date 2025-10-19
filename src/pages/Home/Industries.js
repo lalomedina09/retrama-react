@@ -12,7 +12,7 @@ const Industries = () => {
     const industries = [
         {
             image: "/assets/img/service/service_2_1.jpg",
-            title: "Alimenticia y Bebidas",
+            title: "Alimenticia",
             text: "Tarimas sanitarias y embalajes especializados para el manejo seguro de productos alimenticios, cumpliendo con normativas de higiene."
         },
         {
