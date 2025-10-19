@@ -4,34 +4,45 @@ import { Link } from 'react-router-dom';
 const IndustrieSidebar = () => {
     const projectInfo = [
         {
-            icon: "fa-solid fa-plane",
+            icon: "fa-solid fa-microchip",
             subtitle: "Sector:",
-            title: "Industria Aeronáutica"
+            title: "Industria Electrónica"
         },
         {
             icon: "fa-solid fa-certificate",
             subtitle: "Certificación:",
-            title: "FAA & EASA"
+            title: "ESD S20.20 & IPC"
         },
         {
             icon: "fa-solid fa-gears",
             subtitle: "Aplicación:",
-            title: "Componentes Críticos"
+            title: "Componentes Sensibles"
         },
         {
             icon: "fa-solid fa-weight-hanging",
             subtitle: "Capacidad:",
-            title: "Hasta 2.5 Toneladas"
+            title: "Hasta 1.0 Toneladas"
         }
     ];
 
     const certifications = [
-        "FAA - Federal Aviation Administration",
-        "EASA - European Union Aviation Safety Agency",
-        "AS9100 - Quality Management Aerospace",
-        "NADCAP - Special Processes Certification",
-        "AS9120 - Aerospace Distributors",
-        "ISO 9001 - Quality Management Systems"
+        "ESD S20.20 - Protección Electrostática",
+        "IPC-A-610 - Estándar de Calidad",
+        "JEDEC - Estándares Semiconductores",
+        "ISO 14644 - Cleanroom Standards",
+        "IEC 61340 - ESD Control",
+        "RoHS - Restricción Sustancias Peligrosas"
+    ];
+
+    const applications = [
+        "Circuitos Impresos (PCBs)",
+        "Semiconductores y Microchips",
+        "Componentes SMT y BGA",
+        "Dispositivos IoT",
+        "Sistemas Embebidos",
+        "Equipo Médico Electrónico",
+        "Telecomunicaciones",
+        "Componentes Automotrices"
     ];
 
     return (
@@ -52,7 +63,7 @@ const IndustrieSidebar = () => {
             </div>
 
             <div className="widget widget_categories">
-                <h3 className="widget_title">Certificaciones Aeronáuticas</h3>
+                <h3 className="widget_title">Certificaciones Electrónicas</h3>
                 <div className="category-list">
                     {certifications.map((cert, index) => (
                         <div className="category-item text-start mb-3" key={index}>
@@ -63,41 +74,64 @@ const IndustrieSidebar = () => {
                 </div>
             </div>
 
+            <div className="widget widget_categories">
+                <h3 className="widget_title">Aplicaciones Específicas</h3>
+                <div className="category-list">
+                    {applications.map((app, index) => (
+                        <div className="category-item text-start mb-3" key={index}>
+                            <i className="fa-solid fa-check text-success"></i>
+                            <span className="category-name">{app}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
             <div className="widget widget_features">
                 <h3 className="widget_title">Características Clave</h3>
                 <div className="feature-list">
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Certificación AS9100</span>
+                        <span className="text-white">Certificación ESD S20.20</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Protección ESD y antiestática</span>
+                        <span className="text-white">Materiales antiestáticos permanentes</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Resistente a fluidos aeronáuticos</span>
+                        <span className="text-white">Compatibilidad con cleanrooms</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Sistemas de sujeción certificados</span>
+                        <span className="text-white">Resistente a solventes electrónicos</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Trazabilidad completa</span>
+                        <span className="text-white">Baja generación de partículas</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Puntos de izaje certificados</span>
+                        <span className="text-white">Sistemas de contención ESD</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Temperatura -40°C a +80°C</span>
+                        <span className="text-white">Temperatura -20°C a +60°C</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Identificación RFID</span>
+                        <span className="text-white">Identificación RFID/QR</span>
                     </div>
+                </div>
+            </div>
+
+            <div className="widget widget_offer" data-bg-src="assets/img/bg/offer_bg_1.jpg">
+                <div className="offer-banner">
+                    <span className="sub-title style1">Consulta Especializada</span>
+                    <h5 className="banner-title">¿Necesita Soluciones ESD?</h5>
+                    <Link to="/contacto" className="th-btn style1 th-icon">
+                        <span className="btn-text" data-back="Contactar Especialista" data-front="Contactar Especialista"></span>
+                        <i className="fa-regular fa-arrow-right ms-2"></i>
+                    </Link>
                 </div>
             </div>
         </aside>
