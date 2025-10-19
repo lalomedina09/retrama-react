@@ -13,10 +13,10 @@ const IndustrieBreadcumb = () => {
             <div className="overlay-grey" />
             <div className="container" style={{ position: "relative", zIndex: 2 }}>
                 <div className="breadcumb-content">
-                    <h1 className="breadcumb-title">Industria Aeronáutica</h1>
+                    <h1 className="breadcumb-title">Industria Construcción</h1>
                     <ul className="breadcumb-menu">
                         <li><Link to="/">Inicio</Link></li>
-                        <li>Industria Aeronáutica</li>
+                        <li>Industria Construcción</li>
                     </ul>
                 </div>
             </div>
