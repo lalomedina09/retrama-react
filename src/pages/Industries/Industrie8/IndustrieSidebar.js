@@ -4,34 +4,45 @@ import { Link } from 'react-router-dom';
 const IndustrieSidebar = () => {
     const projectInfo = [
         {
-            icon: "fa-solid fa-plane",
+            icon: "fa-solid fa-satellite-dish",
             subtitle: "Sector:",
-            title: "Industria Aeronáutica"
+            title: "Telecomunicaciones"
         },
         {
             icon: "fa-solid fa-certificate",
             subtitle: "Certificación:",
-            title: "FAA & EASA"
+            title: "FCC & IFT"
         },
         {
-            icon: "fa-solid fa-gears",
+            icon: "fa-solid fa-satellite-dish",
             subtitle: "Aplicación:",
-            title: "Componentes Críticos"
+            title: "Equipos de Red"
         },
         {
             icon: "fa-solid fa-weight-hanging",
             subtitle: "Capacidad:",
-            title: "Hasta 2.5 Toneladas"
+            title: "Hasta 1.8 Toneladas"
         }
     ];
 
     const certifications = [
-        "FAA - Federal Aviation Administration",
-        "EASA - European Union Aviation Safety Agency",
-        "AS9100 - Quality Management Aerospace",
-        "NADCAP - Special Processes Certification",
-        "AS9120 - Aerospace Distributors",
-        "ISO 9001 - Quality Management Systems"
+        "FCC - Federal Communications Commission",
+        "IFT - Instituto Federal Telecom",
+        "ISO 9001 - Quality Management",
+        "UIT - Unión Internacional Telecom",
+        "TIA/EIA - Estándares Telecom",
+        "NEBS - Network Equipment Standards"
+    ];
+
+    const applications = [
+        "Antenas y Sistemas RF",
+        "Equipos de Fibra Óptica",
+        "Routers y Switches",
+        "Sistemas de Transmisión",
+        "Equipos de Data Center",
+        "Sistemas Satelitales",
+        "Radio Enlaces",
+        "Infraestructura 5G"
     ];
 
     return (
@@ -52,7 +63,7 @@ const IndustrieSidebar = () => {
             </div>
 
             <div className="widget widget_categories">
-                <h3 className="widget_title">Certificaciones Aeronáuticas</h3>
+                <h3 className="widget_title">Certificaciones Telecom</h3>
                 <div className="category-list">
                     {certifications.map((cert, index) => (
                         <div className="category-item text-start mb-3" key={index}>
@@ -63,41 +74,64 @@ const IndustrieSidebar = () => {
                 </div>
             </div>
 
+            <div className="widget widget_categories">
+                <h3 className="widget_title">Aplicaciones Específicas</h3>
+                <div className="category-list">
+                    {applications.map((app, index) => (
+                        <div className="category-item text-start mb-3" key={index}>
+                            <i className="fa-solid fa-check text-success"></i>
+                            <span className="category-name">{app}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
             <div className="widget widget_features">
                 <h3 className="widget_title">Características Clave</h3>
                 <div className="feature-list">
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Certificación AS9100</span>
+                        <span className="text-white">Protección EMI/RFI</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Protección ESD y antiestática</span>
+                        <span className="text-white">Resistente a intemperie</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Resistente a fluidos aeronáuticos</span>
+                        <span className="text-white">Compatibilidad equipos activos</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Sistemas de sujeción certificados</span>
+                        <span className="text-white">Sistemas de apilamiento seguro</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Trazabilidad completa</span>
+                        <span className="text-white">Trazabilidad de equipos</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Puntos de izaje certificados</span>
+                        <span className="text-white">Puntos de anclaje certificados</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Temperatura -40°C a +80°C</span>
+                        <span className="text-white">Temperatura -30°C a +70°C</span>
                     </div>
                     <div className="feature-item mb-2">
                         <i className="fa-solid fa-check text-success"></i>
-                        <span className="text-white">Identificación RFID</span>
+                        <span className="text-white">Identificación por tecnología</span>
                     </div>
+                </div>
+            </div>
+
+            <div className="widget widget_offer" data-bg-src="assets/img/bg/offer_bg_1.jpg">
+                <div className="offer-banner">
+                    <span className="sub-title style1">Consulta Especializada</span>
+                    <h5 className="banner-title">¿Proyectos de Telecom?</h5>
+                    <Link to="/contacto" className="th-btn style1 th-icon">
+                        <span className="btn-text" data-back="Contactar Especialista" data-front="Contactar Especialista"></span>
+                        <i className="fa-regular fa-arrow-right ms-2"></i>
+                    </Link>
                 </div>
             </div>
         </aside>
