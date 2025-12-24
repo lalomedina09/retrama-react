@@ -84,7 +84,7 @@ const ContactForm = () => {
                     month: 'long',
                     day: 'numeric'
                 }),
-                contact_email: 'info@tudominio.com', // Tu email de contacto
+                contact_email: 'inelcoitswebservices@gmail.com', // Tu email de contacto
                 contact_phone: '+1 234 567 8900', // Tu teléfono
                 company_name: 'Tu Empresa', // Nombre de tu empresa
                 time: Date.now().toString().slice(-6), // Para número de referencia

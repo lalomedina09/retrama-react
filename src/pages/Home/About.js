@@ -31,7 +31,7 @@ const About = () => {
                             </div>
                             <div className="img-box7">
                                 <div className="img1 th-anim">
-                                    <img src="assets/img/normal/about.jpg" alt="About" />
+                                    <img src="assets/img/normal/about.png" alt="About" />
                                 </div>
                                 <div className="about-wrapp">
                                     <div className="discount-wrapp">

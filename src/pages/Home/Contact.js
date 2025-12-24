@@ -49,13 +49,13 @@ const Contact = () => {
             const userTemplateID = process.env.REACT_APP_EMAILJS_USER_TEMPLATE_ID || 'template_user123';
             const userID = process.env.REACT_APP_EMAILJS_USER_ID || 'user_123456789';
 
-            // 📧 1. Enviar email profesional al admin
+            // 📧 1. Enviar email profesional al ADMIN (inelcoitswebservices@gmail.com)
             await emailjs.send(serviceID, adminTemplateID, {
                 from_name: formData.name,
-                from_email: formData.email,
+                from_email: formData.email, // Email del usuario que llenó el formulario
                 phone: formData.phone,
                 message: formData.message,
-                to_email: 'admin@tudominio.com', // Email del admin
+                to_email: 'inelcoitswebservices@gmail.com', // Email del admin fijo
                 to_name: 'Administrador',
                 subject: 'Nueva solicitud de cotización',
                 date: new Date().toLocaleDateString('es-ES', {
@@ -69,9 +69,10 @@ const Contact = () => {
                 })
             }, userID);
 
-            // 📧 2. Enviar email de confirmación profesional al usuario
+            // 📧 2. Enviar email de confirmación profesional al USUARIO (el email que puso en el formulario)
             await emailjs.send(serviceID, userTemplateID, {
                 to_name: formData.name,
+                to_email: formData.email, // Email del usuario (dinámico, del formulario)
                 user_email: formData.email,
                 user_phone: formData.phone,
                 user_message: formData.message,
@@ -80,7 +81,7 @@ const Contact = () => {
                     month: 'long',
                     day: 'numeric'
                 }),
-                contact_email: 'info@tudominio.com', // Tu email de contacto
+                contact_email: 'inelcoitswebservices@gmail.com', // Tu email de contacto
                 contact_phone: '+1 234 567 8900', // Tu teléfono
                 company_name: 'Tu Empresa', // Nombre de tu empresa
                 time: Date.now().toString().slice(-6), // Para número de referencia
@@ -157,7 +158,7 @@ const Contact = () => {
                                     <div>
                                         <strong>¡Éxito!</strong> Formulario enviado correctamente.
                                         <br />
-                                        <small>Te hemos enviado un email de confirmación y te contactaremos pronto.</small>
+                                        <small>Te hemos enviado un email de confirmación a <strong>{formData.email}</strong> y te contactaremos pronto.</small>
                                     </div>
                                 </div>
                             )}

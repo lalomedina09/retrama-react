@@ -67,7 +67,7 @@ const ProductSidebar = () => {
                 </div>
             </div>
 
-            <div className="widget widget_contact">
+            {/*<div className="widget widget_contact">
                 <h4 className="widget_title style2">¿Necesita Asesoría?</h4>
                 <div className="contact-widget">
                     <p>Nuestros expertos están listos para ayudarle a elegir la tarima ideal para sus necesidades.</p>
@@ -83,7 +83,7 @@ const ProductSidebar = () => {
                     </div>
                     <a href="contacto.html" className="th-btn">Contactar Ahora</a>
                 </div>
-            </div>
+            </div>*/}
         </aside>
     );
 };

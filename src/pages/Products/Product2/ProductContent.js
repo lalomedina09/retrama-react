@@ -106,11 +106,11 @@ const ProductContent = () => {
                     ))}
                 </div>
 
-                <div className="cta-box bg-smoke mt-50 p-4 rounded">
+                {/*<div className="cta-box bg-smoke mt-50 p-4 rounded">
                     <h4 className="mb-3">¿Necesita Tarimas Especiales?</h4>
                     <p className="mb-4">Nuestros expertos están listos para analizar sus requerimientos y desarrollar la solución perfecta para su operación.</p>
                     <a href="contacto.html" className="th-btn">Solicitar Cotización Personalizada</a>
-                </div>
+                </div>*/}
             </div>
         </div>
     );
