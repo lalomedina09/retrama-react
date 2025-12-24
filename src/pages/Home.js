@@ -20,7 +20,7 @@ const Home = () => {
                 <Services />
                 <Process />
                 <Industries />
-                <Products />
+                
                 <Contact />
             </main>
         </>

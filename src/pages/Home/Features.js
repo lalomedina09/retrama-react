@@ -8,14 +8,14 @@ const Features = () => {
         {
             image: `${basePath}/assets/img/seccion-2/soluciones-a-medida.jpg`,
             fallback: `${basePath}/assets/img/normal/about_4_1.jpg`,
-            title: "Soluciones a Medida",
-            text: "Desarrollamos tarimas personalizadas según sus necesidades específicas de carga, dimensiones y sector industrial."
+            title: "Misión",
+            text: "Optimizar la cadena logística y la productividad de las empresas en el Norte de México a través de la fabricación, reparación y reciclaje de tarimas de madera, garantizando la más alta calidad, eficiencia y un servicio integral y sostenible."
         },
         {
             image: `${basePath}/assets/img/seccion-2/sustentable.jpg`,
             fallback: `${basePath}/assets/img/service/service_2_1.jpg`,
-            title: "Producción Sostenible",
-            text: "Utilizamos madera de fuentes responsables y procesos optimizados para minimizar el impacto ambiental, sin comprometer la calidad."
+            title: "Visión",
+            text: "Ser reconocidos como el socio logístico líder y referente de la industria en el Norte de México en soluciones de tarimas de madera. Buscamos establecer el estándar de excelencia en calidad, eficiencia y economía circular, impulsando un crecimiento sostenible para nuestros clientes y el medio ambiente."
         }
     ];
 
@@ -53,10 +53,11 @@ const Features = () => {
                                 </div>
                                 <div className="box-content">
                                     <h3 className="box-title">
-                                        Soluciones <br /> a Medida
+                                        Misión <br />
                                     </h3>
                                     <p className="box-text">
                                         {features[0].text}
+                                        <br /><br /><br />
                                     </p>
                                 </div>
                             </div>
@@ -93,7 +94,7 @@ const Features = () => {
                                 </div>
                                 <div className="box-content">
                                     <h3 className="box-title">
-                                        Producción <br /> Sostenible
+                                        Visión <br /> 
                                     </h3>
                                     <p className="box-text">
                                         {features[1].text}

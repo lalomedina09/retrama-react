@@ -14,8 +14,8 @@ const About = () => {
             <main>
                 <AboutBreadcumb />
                 <AboutContent />
-                <ProcessSection />
-                <WhyChooseUs />
+                
+                
             </main>
         </>
     );
