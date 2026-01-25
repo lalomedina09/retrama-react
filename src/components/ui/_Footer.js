@@ -142,8 +142,8 @@ const Footer = () => {
                                     <p className="footer-info">
                                         <i className="fa-sharp fa-solid fa-phone"></i>
                                         <span>
-                                            <a className="text-inherit" href="tel:+528130803998">
-                                                +52 81 3080 3998
+                                            <a className="text-inherit" href="tel:+528120366589">
+                                                +52 81 2036 6589
                                             </a>
                                         </span>
                                     </p>

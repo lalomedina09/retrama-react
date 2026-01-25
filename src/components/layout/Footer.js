@@ -69,7 +69,7 @@ const Footer = () => {
         },
         {
             platform: "whatsapp",
-            url: "https://wa.me/528130803998",
+            url: "https://wa.me/528120366589",
             icon: "fab fa-whatsapp"
         }
     ];
@@ -180,10 +180,10 @@ const Footer = () => {
                                         <span>
                                             <a
                                                 className="text-inherit"
-                                                href="tel:+528130803998"
-                                                onClick={() => handleContactClick('phone', '+528130803998')}
+                                                href="tel:+528120366589"
+                                                onClick={() => handleContactClick('phone', '+528120366589')}
                                             >
-                                                +52 81 3080 3998
+                                                +52 81 2036 6589
                                             </a>
                                         </span>
                                     </p>

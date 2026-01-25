@@ -29,7 +29,7 @@ const Header = () => {
         // Lógica para WhatsApp o formulario de cotización
         const message = encodeURIComponent('Necesito mas informacion, ');
         const currentUrl = window.location.href;
-        window.open(`https://wa.me/528130803998?text=${message}${currentUrl}`, '_blank');
+        window.open(`https://wa.me/528120366589?text=${message}${currentUrl}`, '_blank');
     };
 
     const isActiveLink = (path) => {
