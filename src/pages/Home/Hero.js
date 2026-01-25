@@ -17,7 +17,7 @@ const Hero = () => {
     const slides = [
         {
             id: 1,
-            bg: "assets/img/hero/bg-0.png",
+            bg: "assets/img/hero/bg-0.jpeg",
             title: "Fabricación y comercialización",
             text: "RETRAMA es una empresa especializada en la fabricación y comercialización de tarimas de madera de alta calidad.",
             buttonText: "Solicitar cotización",

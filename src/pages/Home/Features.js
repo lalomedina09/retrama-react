@@ -6,13 +6,13 @@ const Features = () => {
 
     const features = [
         {
-            image: `${basePath}/assets/img/seccion-2/soluciones-a-medida.jpg`,
+            image: `${basePath}/assets/img/seccion-2/soluciones-a-medida.jpeg`,
             fallback: `${basePath}/assets/img/normal/about_4_1.jpg`,
             title: "Misión",
             text: "Optimizar la cadena logística y la productividad de las empresas en el Norte de México a través de la fabricación, reparación y reciclaje de tarimas de madera, garantizando la más alta calidad, eficiencia y un servicio integral y sostenible."
         },
         {
-            image: `${basePath}/assets/img/seccion-2/sustentable.jpg`,
+            image: `${basePath}/assets/img/seccion-2/sustentable.jpeg`,
             fallback: `${basePath}/assets/img/service/service_2_1.jpg`,
             title: "Visión",
             text: "Ser reconocidos como el socio logístico líder y referente de la industria en el Norte de México en soluciones de tarimas de madera. Buscamos establecer el estándar de excelencia en calidad, eficiencia y economía circular, impulsando un crecimiento sostenible para nuestros clientes y el medio ambiente."

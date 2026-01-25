@@ -8,21 +8,16 @@ const AboutContent = () => {
                     <div className="col-xl-7 mb-30 mb-xl-0">
                         <div className="img-box3">
                             <div className="img1">
-                                <img src="assets/img/normal/about-cover.jpg" alt="About" />
+                                <img src="assets/img/normal/about-cover.jpeg" alt="About" />
                             </div>
                             <div className="img2">
-                                <img src="assets/img/normal/about-cover-2.jpg" alt="About" />
+                                
                             </div>
                             <div className="about-wrapp">
-                                <div className="discount-wrapp style2">
-                                    <h2 className="box-counter"><span className="counter-number">10</span></h2>
-                                    <div className="discount-tag">
-                                        {/*<span className="discount-anime">solak-solak enargy since in 1996</span>*/}
-                                    </div>
-                                </div>
+                                
                             </div>
                             <div className="about-shape">
-                                <img src="assets/img/shape/shape-4.png" alt="shape" />
+                                
                             </div>
                         </div>
                     </div>

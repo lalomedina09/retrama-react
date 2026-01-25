@@ -3,22 +3,22 @@ import React from 'react';
 const Process = () => {
     const processes = [
         {
-            image: "assets/img/process/paso-1.jpg",
+            image: "assets/img/process/paso-1.jpeg",
             title: "Selección y preparación de la madera",
             text: "Seleccionamos materia prima de alta calidad y origen sostenible."
         },
         {
-            image: "assets/img/process/paso-2.jpg",
+            image: "assets/img/process/paso-2.jpeg",
             title: "Corte y armado preciso",
             text: "Utilizando maquinaria de última tecnología, cortamos cada componente con medidas milimétricas."
         },
         {
-            image: "assets/img/process/paso-3.jpg",
+            image: "assets/img/process/paso-3.jpeg",
             title: "Acabado y control de calidad",
             text: "Realizamos un lijado minucioso para eliminar astillas y asegurar una superficie perfectamente lisa."
         },
         {
-            image: "assets/img/process/paso-4.jpg",
+            image: "assets/img/process/paso-4.jpeg",
             title: "Embalaje y distribución",
             text: "Empaquetamos las tarimas de forma segura para evitar daños durante el transporte."
         }
