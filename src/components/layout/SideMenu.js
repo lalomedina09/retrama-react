@@ -28,7 +28,7 @@ const SideMenu = () => {
                             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/528120397138" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
                                 <i className="fab fa-whatsapp"></i>
                             </a>
                             <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">

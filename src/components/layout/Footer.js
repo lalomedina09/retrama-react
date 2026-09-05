@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { EMAIL, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../constants/contact';
 
 const Footer = () => {
     const handleLinkClick = (section) => {
@@ -9,11 +10,6 @@ const Footer = () => {
     const handleSocialClick = (platform) => {
         console.log(`Redirigiendo a: ${platform}`);
         // Aquí puedes agregar los enlaces reales de redes sociales
-    };
-
-    const handleGalleryClick = (imageUrl) => {
-        console.log(`Abrir imagen: ${imageUrl}`);
-        // Lógica para modal de galería
     };
 
     const handleContactClick = (type, value) => {
@@ -27,28 +23,19 @@ const Footer = () => {
 
     // Datos para mapear
     const enlacesRapidos = [
+        { to: "/", text: "Inicio" },
         { to: "/nosotros", text: "Nosotros" },
+        { to: "/productos", text: "Productos" },
         { to: "/preguntas-frecuentes", text: "FAQ" },
-        { to: "/productos/tarimas-nuevas", text: "Tarimas nuevas" },
-        { to: "/productos/tarimas-medida", text: "Tarimas a la medida" },
         { to: "/contacto", text: "Contáctanos" }
     ];
 
     const servicios = [
-        { to: "/contacto", text: "Compra de Tarimas" },
-        { to: "/contacto", text: "Reparación de Tarimas" },
-        { to: "/contacto", text: "Cumplimiento Norma 144" },
-        { to: "/productos/tarimas-hibridas", text: "Tarimas Híbridas" },
-        { to: "/productos/tarimas-medida", text: "Tarimas a la Medida" }
-    ];
-
-    const galleryImages = [
-        { src: "/assets/img/widget/gallery_1_1.jpg", alt: "Proyecto RETRAMA 1" },
-        { src: "/assets/img/widget/gallery_1_2.jpg", alt: "Proyecto RETRAMA 2" },
-        { src: "/assets/img/widget/gallery_1_3.jpg", alt: "Proyecto RETRAMA 3" },
-        { src: "/assets/img/widget/gallery_1_4.jpg", alt: "Proyecto RETRAMA 4" },
-        { src: "/assets/img/widget/gallery_1_5.jpg", alt: "Proyecto RETRAMA 5" },
-        { src: "/assets/img/widget/gallery_1_6.jpg", alt: "Proyecto RETRAMA 6" }
+        { to: "/productos#tarimas-nuevas", text: "Tarimas Nuevas" },
+        { to: "/productos#tarimas-reacondicionadas", text: "Tarimas Reacondicionadas" },
+        { to: "/productos#tarimas-hibridas", text: "Tarimas Híbridas" },
+        { to: "/productos#tarimas-medida", text: "Tarimas a la Medida" },
+        { to: "/contacto", text: "Solicitar cotización" }
     ];
 
     const socialLinks = [
@@ -69,7 +56,7 @@ const Footer = () => {
         },
         {
             platform: "whatsapp",
-            url: "https://wa.me/528120366589",
+            url: WHATSAPP_URL,
             icon: "fab fa-whatsapp"
         }
     ];
@@ -180,10 +167,10 @@ const Footer = () => {
                                         <span>
                                             <a
                                                 className="text-inherit"
-                                                href="tel:+528120366589"
-                                                onClick={() => handleContactClick('phone', '+528120366589')}
+                                                href={`tel:${PHONE_TEL}`}
+                                                onClick={() => handleContactClick('phone', PHONE_TEL)}
                                             >
-                                                +52 81 2036 6589
+                                                {PHONE_DISPLAY}
                                             </a>
                                         </span>
                                     </p>
@@ -194,43 +181,13 @@ const Footer = () => {
                                         <span>
                                             <a
                                                 className="text-inherit"
-                                                href="mailto:contacto@retrama.com.mx"
-                                                onClick={() => handleContactClick('email', 'contacto@retrama.com.mx')}
+                                                href={`mailto:${EMAIL}`}
+                                                onClick={() => handleContactClick('email', EMAIL)}
                                             >
-                                                contacto@retrama.com.mx
+                                                {EMAIL}
                                             </a>
                                         </span>
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Columna 5: Galería */}
-                        <div className="col-md-6 col-xl-auto">
-                            <div className="widget footer-widget">
-                                <h3 className="widget_title text-start">Galería</h3>
-                                <div className="sidebar-gallery">
-                                    {galleryImages.map((image, index) => (
-                                        <div key={index} className="gallery-thumb">
-                                            <img
-                                                src={image.src}
-                                                alt={image.alt}
-                                                onError={(e) => {
-                                                    e.target.src = "/assets/img/widget/gallery_1_1.jpg";
-                                                }}
-                                            />
-                                            <a
-                                                href={image.src}
-                                                className="gallery-btn popup-image"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    handleGalleryClick(image.src);
-                                                }}
-                                            >
-                                                <i className="fab fa-instagram"></i>
-                                            </a>
-                                        </div>
-                                    ))}
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from '../../constants/contact';
 
 const ContactInfo = () => {
     return (
@@ -29,8 +30,8 @@ const ContactInfo = () => {
                             <div className="media-body text-start">
                                 <h5 className="box-title">Teléfono de Contacto</h5>
                                 <p className="box-text">
-                                    <a href="tel:+528120366589">Móvil: +52 812036 6589</a>
-                                    <a href="mailto:ventas@retrama.com.mx">Correo: ventas@retrama.com.mx</a>
+                                    <a href={`tel:${PHONE_TEL}`}>Móvil: {PHONE_DISPLAY}</a>
+                                    <a href={`mailto:${EMAIL}`}>Correo: {EMAIL}</a>
                                 </p>
                             </div>
                         </div>

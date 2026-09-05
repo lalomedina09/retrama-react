@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper';
 
-// Importar estilos de Swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -42,18 +41,6 @@ const Industries = () => {
         }
     ];
 
-    const handleIndustryClick = (e, industryTitle) => {
-        e.preventDefault();
-        console.log(`Navegando a: ${industryTitle}`);
-        // Aquí puedes agregar la lógica de navegación
-    };
-
-    const handleViewDetails = (e, industryTitle) => {
-        e.preventDefault();
-        console.log(`Ver detalles de: ${industryTitle}`);
-        // Lógica para ver más detalles
-    };
-
     return (
         <section
             className="z-index-common overflow-hidden space"
@@ -63,26 +50,10 @@ const Industries = () => {
         >
             <div className="container">
                 <div className="row justify-content-lg-between justify-content-center align-items-center">
-                    <div className="col-lg-5">
+                    <div className="col-lg-8">
                         <div className="title-area text-center text-lg-start">
                             <span className="sub-title sub-title3">Tipo de industrias</span>
                             <h2 className="sec-title text-white">Soluciones para diversas industrias</h2>
-                        </div>
-                    </div>
-                    <div className="col-auto">
-                        <div className="sec-btn">
-                            <a
-                                href="#proyectos"
-                                className="th-btn style1 th-radius th-icon"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    console.log('Ver más proyectos');
-                                }}
-                            >
-                                <span className="btn-text" data-back="Ver Más" data-front="Ver Más">
-                                </span>
-                                <i className="fa-regular fa-arrow-right ms-2"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -114,25 +85,8 @@ const Industries = () => {
                             <SwiperSlide key={index}>
                                 <div className="service-grid">
                                     <div className="service-grid_content">
-                                        <h3 className="box-title">
-                                            <a
-                                                href="#service-details"
-                                                onClick={(e) => handleIndustryClick(e, industry.title)}
-                                            >
-                                                {industry.title}
-                                            </a>
-                                        </h3>
+                                        <h3 className="box-title">{industry.title}</h3>
                                         <p className="box-text">{industry.text}</p>
-                                        <a
-                                            href="#service"
-                                            className="th-btn border-btn th-radius th-icon fw-semibold"
-                                            onClick={(e) => handleViewDetails(e, industry.title)}
-                                        >
-                                            <span className="btn-text" data-back="Ver Detalles" data-front="Ver Detalles">
-                                                
-                                            </span>
-                                            <i className="fa-regular fa-arrow-right ms-2"></i>
-                                        </a>
                                     </div>
                                     <div className="box-img th-anim">
                                         <img

@@ -1,101 +1,73 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { getWhatsAppUrl } from '../../constants/contact';
+
+const closeMobileMenu = () => {
+    document.querySelectorAll('.th-menu-wrapper').forEach((el) => {
+        el.classList.remove('th-body-visible');
+    });
+};
 
 const MobileMenu = () => {
-    const [activeMenu, setActiveMenu] = useState(null);
-
-    const handleMenuToggle = (menu) => {
-        setActiveMenu(activeMenu === menu ? null : menu);
-    };
-
-    const handleMobileMenuClose = () => {
-        console.log('Mobile menu cerrado');
-        // Lógica para cerrar mobile menu
-    };
-
-    const handleNavigation = (section) => {
-        console.log(`Navegando a: ${section}`);
-        setActiveMenu(null);
-        // Lógica de navegación
+    const handleNavigate = () => {
+        closeMobileMenu();
     };
 
     return (
-        <div className="th-menu-wrapper">
+        <div
+            className="th-menu-wrapper"
+            onClick={(event) => {
+                if (event.target.classList.contains('th-menu-wrapper')) {
+                    closeMobileMenu();
+                }
+            }}
+        >
             <div className="th-menu-area text-center">
-                <button className="th-menu-toggle" onClick={handleMobileMenuClose}>
-                    <i className="fal fa-times"></i>
+                <button
+                    type="button"
+                    className="th-menu-toggle"
+                    onClick={closeMobileMenu}
+                    aria-label="Cerrar menú de navegación"
+                >
+                    <i className="fal fa-times" aria-hidden="true"></i>
                 </button>
                 <div className="mobile-logo">
-                    <a href="/">
+                    <Link to="/" onClick={handleNavigate}>
                         <img src="/assets/img/logo.png" alt="RETRAMA" />
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="th-mobile-menu">
                     <ul>
                         <li>
-                            <a href="#inicio" onClick={() => handleNavigation('inicio')}>Inicio</a>
+                            <Link to="/" onClick={handleNavigate}>Inicio</Link>
                         </li>
                         <li>
-                            <a href="#nosotros" onClick={() => handleNavigation('nosotros')}>Nosotros</a>
+                            <Link to="/nosotros" onClick={handleNavigate}>Nosotros</Link>
                         </li>
-
-                        {/* Productos con submenú */}
-                        <li className={`menu-item-has-children ${activeMenu === 'productos' ? 'active' : ''}`}>
-                            <a href="#productos" onClick={() => handleMenuToggle('productos')}>
-                                Productos
-                            </a>
-                            <ul className="sub-menu">
-                                <li>
-                                    <a href="#tarimas-nuevas" onClick={() => handleNavigation('tarimas-nuevas')}>
-                                        Tarimas Nuevas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#tarimas-medida" onClick={() => handleNavigation('tarimas-medida')}>
-                                        Tarimas a la medida
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#tarimas-reacondicionadas" onClick={() => handleNavigation('tarimas-reacondicionadas')}>
-                                        Tarimas Reacondicionadas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#tarimas-hibridas" onClick={() => handleNavigation('tarimas-hibridas')}>
-                                        Tarimas Hibridas
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        {/* Soluciones con submenú */}
-                        <li className={`menu-item-has-children ${activeMenu === 'soluciones' ? 'active' : ''}`}>
-                            <a href="#soluciones" onClick={() => handleMenuToggle('soluciones')}>
-                                Soluciones
-                            </a>
-                            <ul className="sub-menu">
-                                <li>
-                                    <a href="#compra-tarimas" onClick={() => handleNavigation('compra-tarimas')}>
-                                        Compra de tarimas usadas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#reparacion" onClick={() => handleNavigation('reparacion')}>
-                                        Reparación de tarimas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#norma-144" onClick={() => handleNavigation('norma-144')}>
-                                        Cumplimiento norma 144
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
                         <li>
-                            <a href="#contacto" onClick={() => handleNavigation('contacto')}>Contacto</a>
+                            <Link to="/productos" onClick={handleNavigate}>Productos</Link>
+                        </li>
+                        <li>
+                            <Link to="/preguntas-frecuentes" onClick={handleNavigate}>FAQ</Link>
+                        </li>
+                        <li>
+                            <Link to="/contacto" onClick={handleNavigate}>Contacto</Link>
                         </li>
                     </ul>
+                    <div className="mt-4 px-3">
+                        <a
+                            href={getWhatsAppUrl('Hola, me gustaría recibir más información.')}
+                            className="th-btn style1 th-radius w-100"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Contactar por WhatsApp"
+                            onClick={handleNavigate}
+                        >
+                            WhatsApp
+                            <i className="fab fa-whatsapp ms-2" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

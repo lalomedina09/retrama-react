@@ -55,7 +55,7 @@ const Services = () => {
                 <div className="row justify-content-center align-items-center">
                     <div className="col-xl-6">
                         <div className="title-area text-center pe-xl-3 ps-xl-3">
-                            <span className="sub-title sub-title3">Nuestras Soluciones</span>
+                            <span className="sub-title sub-title3">Nuestras soluciones</span>
                             <h2 className="sec-title">
                                 Como plus a nuestra calidad y servicio, te ofrecemos
                             </h2>
@@ -96,16 +96,8 @@ const Services = () => {
                                                 alt={`Icono ${service.title}`}
                                             />
                                         </div>
-                                        <h3 className="box-title">
-                                            <a href="#service-details">
-                                                {service.title}
-                                            </a>
-                                        </h3>
+                                        <h3 className="box-title">{service.title}</h3>
                                         <p className="box-text">{service.text}</p>
-                                        <a href="#service" className="th-btn border-btn th-radius th-icon fw-semibold">
-                                            <span className="btn-text">Ver Más</span>
-                                            <i className="fa-regular fa-arrow-right ms-2"></i>
-                                        </a>
                                     </div>
                                 </div>
                             </SwiperSlide>

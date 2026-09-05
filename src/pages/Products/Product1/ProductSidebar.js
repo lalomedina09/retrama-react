@@ -78,7 +78,7 @@ const ProductSidebar = () => {
                         </div>
                         <div className="contact-item">
                             <i className="far fa-envelope"></i>
-                            <span>ventas@retrama.com</span>
+                            <span>contacto@retrama.com.mx</span>
                         </div>
                     </div>
                     <a href="contacto.html" className="th-btn">Contactar Ahora</a>

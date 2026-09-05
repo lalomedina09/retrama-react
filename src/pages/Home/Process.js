@@ -31,7 +31,7 @@ const Process = () => {
                     <div className="col-lg-6 col-xxl-4">
                         <div className="title-area text-center">
                             <span className="sub-title sub-title2">Nuestro Proceso</span>
-                            <h2 className="sec-title">Producción <br />Eficiente y Sostenible</h2>
+                            <h2 className="sec-title">Producción eficiente y sostenible</h2>
                         </div>
                     </div>
                 </div>

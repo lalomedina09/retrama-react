@@ -1,0 +1,321 @@
+.hero-retrama .hero-inner {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero-retrama .th-hero-bg {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-retrama .hero-retrama-content {
+    padding: 260px 0 160px;
+    max-width: 860px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.hero-retrama .hero-retrama-content .hero-title {
+    display: block;
+    font-size: clamp(32px, 4.6vw, 64px);
+    line-height: 1.15;
+    text-transform: none;
+    letter-spacing: 0;
+    max-width: 18ch;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero-retrama .hero-retrama-content .hero-text {
+    max-width: 640px;
+    font-size: clamp(16px, 2vw, 20px);
+    text-align: left;
+    margin-left: 0;
+}
+
+.hero-retrama-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.hero-retrama-actions .th-btn {
+    white-space: normal;
+}
+
+.hero-retrama-actions .hero-retrama-btn-secondary {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #12231a;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+.hero-retrama-actions .hero-retrama-btn-secondary .btn-text,
+.hero-retrama-actions .hero-retrama-btn-secondary .btn-text::before,
+.hero-retrama-actions .hero-retrama-btn-secondary .btn-text::after,
+.hero-retrama-actions .hero-retrama-btn-secondary i {
+    color: #12231a;
+}
+
+.hero-retrama-actions .hero-retrama-btn-secondary:hover {
+    background-color: #57b33e;
+    border-color: #57b33e;
+    color: #ffffff;
+}
+
+.hero-retrama-actions .hero-retrama-btn-secondary:hover .btn-text,
+.hero-retrama-actions .hero-retrama-btn-secondary:hover .btn-text::before,
+.hero-retrama-actions .hero-retrama-btn-secondary:hover .btn-text::after,
+.hero-retrama-actions .hero-retrama-btn-secondary:hover i {
+    color: #ffffff;
+}
+
+.retrama-value {
+    background: #fff;
+}
+
+.retrama-value__title {
+    max-width: 18ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.retrama-value__text {
+    max-width: 760px;
+    margin: 20px auto 0;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #3d4a42;
+}
+
+.retrama-home-products {
+    background: #f4f8f4;
+}
+
+.retrama-home-products__subtitle {
+    font-size: 18px;
+    color: #57b33e;
+    font-weight: 600;
+    margin-top: -8px;
+}
+
+.retrama-product-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(18, 35, 26, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 32px 24px 28px;
+}
+
+.retrama-product-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 8px;
+    border-radius: 18px;
+    background: rgba(87, 179, 62, 0.12);
+    color: #57b33e;
+    font-size: 32px;
+}
+
+.retrama-product-card__body {
+    padding: 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.retrama-product-card__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.retrama-product-card__text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3d4a42;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.retrama-product-card__body .th-btn {
+    width: auto;
+    min-width: 0;
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+.header-layout3 .header-button {
+    gap: 10px;
+}
+
+@media (max-width: 1199px) {
+    .header-layout3 .menu-area {
+        padding: 0 12px 0 18px;
+    }
+
+    .header-layout3 .header-button .th-btn {
+        padding-left: 16px;
+        padding-right: 16px;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-retrama .hero-retrama-content {
+        padding: 190px 0 110px;
+        text-align: left;
+    }
+
+    .hero-retrama .hero-retrama-content .hero-title {
+        max-width: none;
+    }
+
+    .hero-retrama-actions {
+        justify-content: flex-start;
+    }
+
+    .header-layout3 .menu-area {
+        margin-top: 14px;
+        padding: 8px 10px 8px 14px;
+    }
+
+    .retrama-value__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-retrama .hero-retrama-content {
+        padding: 170px 0 90px;
+    }
+
+    .hero-retrama-actions .th-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-layout3 .header-logo img {
+        max-width: 110px;
+    }
+
+    .header-layout3 .header-button .th-btn {
+        padding: 8px 10px;
+        min-width: 0;
+    }
+
+    .header-layout3 .header-button .th-btn .btn-text {
+        font-size: 13px;
+    }
+}
+
+.retrama-home-products .retrama-product-card,
+.process-box-wrap .process-box {
+    height: 100%;
+}
+
+.retrama-about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.retrama-about-media {
+    flex: 0 0 360px;
+    max-width: 360px;
+}
+
+.retrama-about-video {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+}
+
+.retrama-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    width: 72px;
+    height: 72px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #57b33e;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(18, 35, 26, 0.28);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.retrama-play-btn i {
+    font-size: 22px;
+    margin-left: 3px;
+    color: #ffffff;
+}
+
+.retrama-play-btn:hover,
+.retrama-play-btn:focus-visible {
+    background: #459c2e;
+    transform: translate(-50%, -50%) scale(1.06);
+    box-shadow: 0 10px 28px rgba(18, 35, 26, 0.35);
+    outline: none;
+}
+
+.retrama-about-video .img1 img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.retrama-about-copy {
+    flex: 1 1 0;
+    text-align: left;
+    min-width: 0;
+}
+
+.retrama-about-copy p {
+    font-size: 18px;
+    line-height: 1.75;
+    color: #3d4a42;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+    .retrama-about-row {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .retrama-about-media {
+        flex-basis: auto;
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .retrama-about-video .img1 img {
+        height: 220px;
+    }
+}
