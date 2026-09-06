@@ -9,9 +9,9 @@ const productSections = [
         id: 'tarimas-nuevas',
         title: 'Tarimas Nuevas',
         subtitle: 'Nos especializamos en la fabricación de tarimas nuevas de madera de la más alta calidad.',
-        image: '/assets/img/project/project_3_1.jpeg',
+        image: '/assets/img/products/nuevas.png',
         fallback: '/assets/img/service/service_details.jpg',
-        imageAlt: 'Tarimas nuevas de madera RETRAMA',
+        imageAlt: 'Tarimas nuevas de madera Retrama',
         layout: 'image-left',
         paragraphs: [
             'Utilizamos maderas seleccionadas como pino y encino, sometidas a procesos de secado y tratamiento que garantizan durabilidad, resistencia y cumplimiento con las normas internacionales.',
@@ -23,9 +23,9 @@ const productSections = [
         id: 'tarimas-reacondicionadas',
         title: 'Tarimas Re-acondicionadas',
         claim: 'Contribuimos al medio ambiente mediante la reutilización de madera, ahorrando hasta 40% vs. tarimas nuevas',
-        image: '/assets/img/service/tarimas_reacondicionadas.jpg',
+        image: '/assets/img/products/reacondicionadas.png',
         fallback: '/assets/img/seccion-2/sustentable.jpeg',
-        imageAlt: 'Tarimas de madera reacondicionadas RETRAMA',
+        imageAlt: 'Tarimas re-acondicionadas Retrama',
         layout: 'image-right',
         paragraphs: [
             'Ofrecemos soluciones completas en tarimas de madera re-acondicionadas, desde la recolección de material usado hasta la entrega de productos restaurados.',
@@ -37,9 +37,9 @@ const productSections = [
         id: 'tarimas-hibridas',
         title: 'Tarimas Híbridas',
         claim: 'La fuerza de lo nuevo, con la inteligencia de lo reutilizado.',
-        image: '/assets/img/service/tarimas_hibridas.jpg',
+        image: '/assets/img/products/hibridas.png',
         fallback: '/assets/img/seccion-2/soluciones-a-medida.jpeg',
-        imageAlt: 'Tarimas híbridas de madera RETRAMA',
+        imageAlt: 'Tarimas híbridas de madera Retrama',
         layout: 'image-left',
         paragraphs: [
             'En Retrama sustituimos los cargadores por piezas nuevas, reforzando la estructura y prolongando la vida útil de tus tarimas. Así combinamos la resistencia de lo nuevo con el aprovechamiento responsable de materiales en buen estado.',
@@ -50,9 +50,9 @@ const productSections = [
     {
         id: 'tarimas-medida',
         title: 'Tarimas a la Medida',
-        image: '/assets/img/seccion-2/soluciones-a-medida.jpeg',
+        image: '/assets/img/products/a-la-medida.png',
         fallback: '/assets/img/service/service_inner_1.jpg',
-        imageAlt: 'Tarimas de madera a la medida RETRAMA',
+        imageAlt: 'Tarimas de madera a la medida Retrama',
         layout: 'image-right',
         paragraphs: [
             'En RETRAMA entendemos que cada cliente tiene necesidades únicas de almacenamiento y logística. Nos especializamos en la fabricación de tarimas de madera personalizadas diseñadas específicamente para sus requerimientos operativos.',

@@ -10,7 +10,8 @@
 
 .hero-retrama .hero-retrama-content {
     padding: 260px 0 160px;
-    width: min(860px, calc(100vw - 40px));
+    width: min(920px, calc(100vw - 180px));
+    max-width: 920px;
     text-align: left;
     margin-left: 0;
     margin-right: auto;
@@ -18,11 +19,11 @@
 
 .hero-retrama .hero-retrama-content .hero-title {
     display: block;
-    font-size: clamp(32px, 4.6vw, 64px);
-    line-height: 1.15;
+    font-size: clamp(44px, 3.9vw, 56px);
+    line-height: 1.16;
     text-transform: none;
     letter-spacing: 0;
-    max-width: 18ch;
+    max-width: 920px;
     text-align: left;
     margin-left: 0;
     margin-right: 0;
@@ -191,8 +192,14 @@
         text-align: left;
     }
 
+    .hero-retrama .hero-retrama-content {
+        width: min(720px, calc(100vw - 40px));
+        max-width: min(720px, calc(100vw - 40px));
+    }
+
     .hero-retrama .hero-retrama-content .hero-title {
-        max-width: none;
+        max-width: 100%;
+        font-size: clamp(36px, 5.2vw, 48px);
     }
 
     .hero-retrama-actions {
