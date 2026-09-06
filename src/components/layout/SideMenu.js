@@ -22,13 +22,13 @@ const SideMenu = () => {
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                                <i className="fab fa-twitter"></i>
+                            <a href="#instagram-pendiente" aria-label="Instagram pendiente">
+                                <i className="fab fa-instagram"></i>
                             </a>
                             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://wa.me/528120397138" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+                            <a href="https://wa.me/528120397139" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
                                 <i className="fab fa-whatsapp"></i>
                             </a>
                             <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">

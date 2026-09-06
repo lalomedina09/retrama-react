@@ -17,6 +17,24 @@
     margin-bottom: 10px;
 }
 
+.products-intro {
+    padding: 82px 0 36px;
+    background: #fff;
+}
+
+.products-intro__content {
+    width: min(900px, calc(100vw - 40px));
+    margin: 0 auto;
+}
+
+.products-intro__title {
+    color: #12231a;
+    font-size: clamp(32px, 3.6vw, 52px);
+    line-height: 1.14;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
 .product-block {
     padding: 90px 0;
     scroll-margin-top: 120px;
@@ -41,18 +59,6 @@
     order: 1;
 }
 
-.product-block--wide .product-block__grid {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    max-width: 1120px;
-    margin: 0 auto;
-}
-
-.product-block--text .product-block__grid {
-    grid-template-columns: 1fr;
-    max-width: 860px;
-    margin: 0 auto;
-}
-
 .product-block__media img {
     width: 100%;
     height: 420px;
@@ -66,6 +72,7 @@
     line-height: 1.2;
     margin-bottom: 16px;
     color: #12231a;
+    overflow-wrap: break-word;
 }
 
 .product-block__subtitle,
@@ -82,6 +89,7 @@
     line-height: 1.75;
     color: #3d4a42;
     margin-bottom: 16px;
+    overflow-wrap: break-word;
 }
 
 .product-block__text p:last-child {
@@ -91,6 +99,21 @@
 .products-cta {
     background: #57b33e;
     padding: 80px 0;
+}
+
+.products-quality-claim {
+    padding: 54px 0;
+    background: #12231a;
+    text-align: center;
+}
+
+.products-quality-claim p {
+    color: #fff;
+    font-size: clamp(24px, 3vw, 38px);
+    line-height: 1.25;
+    font-weight: 700;
+    max-width: 860px;
+    margin: 0 auto;
 }
 
 .products-cta__actions {
@@ -111,8 +134,8 @@
     }
 
     .product-block__grid,
-    .product-block--wide .product-block__grid,
     .product-block--image-right .product-block__grid {
+        width: min(100%, 335px, calc(100vw - 40px));
         grid-template-columns: 1fr;
         gap: 24px;
     }
@@ -125,12 +148,12 @@
         order: 1;
     }
 
-    .product-block__subtitle,
-    .product-block__claim {
+    .product-block__media {
         order: 2;
     }
 
-    .product-block__media {
+    .product-block__subtitle,
+    .product-block__claim {
         order: 3;
     }
 
@@ -140,6 +163,28 @@
 
     .product-block__media img {
         height: 280px;
+    }
+
+    .products-intro {
+        padding: 64px 0 24px;
+    }
+
+    .products-intro__title {
+        font-size: clamp(28px, 8vw, 36px);
+        max-width: min(335px, calc(100vw - 40px));
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .product-block__title,
+    .product-block__subtitle,
+    .product-block__claim,
+    .product-block__text p,
+    .products-quality-claim p,
+    .products-cta p {
+        max-width: min(335px, calc(100vw - 40px));
+        white-space: normal;
+        overflow-wrap: anywhere;
     }
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { getWhatsAppUrl } from '../../constants/contact';
+import { getWhatsAppUrl, QUOTE_WHATSAPP_MESSAGE } from '../../constants/contact';
 
 const toggleMobileMenu = () => {
     document.querySelectorAll('.th-menu-wrapper').forEach((el) => {
@@ -15,8 +15,7 @@ const Header = () => {
 
     const handleCotizarClick = (e) => {
         e.preventDefault();
-        const message = `Necesito mas informacion, ${window.location.href}`;
-        window.open(getWhatsAppUrl(message), '_blank', 'noopener,noreferrer');
+        window.open(getWhatsAppUrl(QUOTE_WHATSAPP_MESSAGE), '_blank', 'noopener,noreferrer');
     };
 
     const isActiveLink = (path) => {
@@ -46,14 +45,8 @@ const Header = () => {
                                         <li className={isActiveLink('/')}>
                                             <Link to="/">Inicio</Link>
                                         </li>
-                                        <li className={isActiveLink('/nosotros')}>
-                                            <Link to="/nosotros">Nosotros</Link>
-                                        </li>
                                         <li className={isActiveLink('/productos')}>
                                             <Link to="/productos">Productos</Link>
-                                        </li>
-                                        <li className={isActiveLink('/preguntas-frecuentes')}>
-                                            <Link to="/preguntas-frecuentes">FAQ</Link>
                                         </li>
                                         <li className={isActiveLink('/contacto')}>
                                             <Link to="/contacto">Contacto</Link>
@@ -65,7 +58,7 @@ const Header = () => {
                             <div className="col-auto">
                                 <div className="header-button d-flex align-items-center">
                                     <a
-                                        href={getWhatsAppUrl()}
+                                        href={getWhatsAppUrl(QUOTE_WHATSAPP_MESSAGE)}
                                         className="th-btn style1 th-radius"
                                         onClick={handleCotizarClick}
                                         target="_blank"

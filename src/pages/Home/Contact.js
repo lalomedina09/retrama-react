@@ -130,7 +130,7 @@ const Contact = () => {
                         <div className="title-area text-center mb-0 text-xl-start">
                             <span className="sub-title style1 text-white">Contáctanos</span>
                             <h2 className="sec-title text-white mb-0">
-                                Solicita una cotización sin compromiso.
+                                Compártenos tus necesidades y recibe atención personalizada
                             </h2>
                             <p className="text-white mt-3 opacity-75" style={{ fontSize: '14px' }}>
                                 Completa el formulario y te contactaremos dentro de las próximas 24 horas.

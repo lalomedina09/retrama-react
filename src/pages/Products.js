@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Header from '../components/layout/Header';
-import { getWhatsAppUrl } from '../constants/contact';
+import { getWhatsAppUrl, QUOTE_WHATSAPP_MESSAGE } from '../constants/contact';
 import './Products.css';
 
 const productSections = [
     {
         id: 'tarimas-nuevas',
-        title: 'Fabricación de Tarimas Nuevas de Madera',
+        title: 'Tarimas Nuevas',
         subtitle: 'Nos especializamos en la fabricación de tarimas nuevas de madera de la más alta calidad.',
-        layout: 'text',
+        image: '/assets/img/project/project_3_1.jpeg',
+        fallback: '/assets/img/service/service_details.jpg',
+        imageAlt: 'Tarimas nuevas de madera RETRAMA',
+        layout: 'image-left',
         paragraphs: [
             'Utilizamos maderas seleccionadas como pino y encino, sometidas a procesos de secado y tratamiento que garantizan durabilidad, resistencia y cumplimiento con las normas internacionales.',
             'Nuestras tarimas están diseñadas para satisfacer las necesidades de almacenamiento y logística de diversos sectores industriales.',
@@ -18,7 +21,7 @@ const productSections = [
     },
     {
         id: 'tarimas-reacondicionadas',
-        title: 'Tarimas de Madera Re-acondicionadas',
+        title: 'Tarimas Re-acondicionadas',
         claim: 'Contribuimos al medio ambiente mediante la reutilización de madera, ahorrando hasta 40% vs. tarimas nuevas',
         image: '/assets/img/service/tarimas_reacondicionadas.jpg',
         fallback: '/assets/img/seccion-2/sustentable.jpeg',
@@ -32,7 +35,7 @@ const productSections = [
     },
     {
         id: 'tarimas-hibridas',
-        title: 'Tarimas Híbridas de Madera',
+        title: 'Tarimas Híbridas',
         claim: 'La fuerza de lo nuevo, con la inteligencia de lo reutilizado.',
         image: '/assets/img/service/tarimas_hibridas.jpg',
         fallback: '/assets/img/seccion-2/soluciones-a-medida.jpeg',
@@ -46,11 +49,11 @@ const productSections = [
     },
     {
         id: 'tarimas-medida',
-        title: 'Tarimas de Madera a la Medida',
+        title: 'Tarimas a la Medida',
         image: '/assets/img/seccion-2/soluciones-a-medida.jpeg',
         fallback: '/assets/img/service/service_inner_1.jpg',
         imageAlt: 'Tarimas de madera a la medida RETRAMA',
-        layout: 'wide',
+        layout: 'image-right',
         paragraphs: [
             'En RETRAMA entendemos que cada cliente tiene necesidades únicas de almacenamiento y logística. Nos especializamos en la fabricación de tarimas de madera personalizadas diseñadas específicamente para sus requerimientos operativos.',
             'Ya sea que necesite tarimas para productos de dimensiones especiales, cargas pesadas, condiciones específicas de almacenamiento o industrias reguladas, tenemos la solución adecuada.',
@@ -107,6 +110,16 @@ const Products = () => {
                     </div>
                 </div>
 
+                <section className="products-intro">
+                    <div className="container">
+                        <div className="products-intro__content text-center">
+                            <h2 className="products-intro__title">
+                                Retrama: el socio estratégico que tu logística necesita.
+                            </h2>
+                        </div>
+                    </div>
+                </section>
+
                 {productSections.map((section) => (
                     <section
                         key={section.id}
@@ -145,6 +158,12 @@ const Products = () => {
                     </section>
                 ))}
 
+                <section className="products-quality-claim">
+                    <div className="container">
+                        <p>En Retrama aseguramos entregas puntuales y tarimas de calidad.</p>
+                    </div>
+                </section>
+
                 <section className="products-cta">
                     <div className="container text-center">
                         <h2 className="sec-title text-white mb-3">¿Listo para cotizar tus tarimas?</h2>
@@ -157,7 +176,7 @@ const Products = () => {
                                 <i className="fa-regular fa-arrow-right ms-2" aria-hidden="true"></i>
                             </Link>
                             <a
-                                href={getWhatsAppUrl('Hola, quiero cotizar tarimas con RETRAMA.')}
+                                href={getWhatsAppUrl(QUOTE_WHATSAPP_MESSAGE)}
                                 className="th-btn black-btn2 th-radius"
                                 target="_blank"
                                 rel="noopener noreferrer"

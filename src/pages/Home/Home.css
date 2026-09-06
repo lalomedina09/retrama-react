@@ -10,7 +10,7 @@
 
 .hero-retrama .hero-retrama-content {
     padding: 260px 0 160px;
-    max-width: 860px;
+    width: min(860px, calc(100vw - 40px));
     text-align: left;
     margin-left: 0;
     margin-right: auto;
@@ -26,6 +26,7 @@
     text-align: left;
     margin-left: 0;
     margin-right: 0;
+    overflow-wrap: break-word;
 }
 
 .hero-retrama .hero-retrama-content .hero-text {
@@ -40,9 +41,18 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 16px;
+    width: 100%;
 }
 
 .hero-retrama-actions .th-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    white-space: normal;
+}
+
+.hero-retrama-actions .th-btn .btn-text {
     white-space: normal;
 }
 
@@ -78,9 +88,11 @@
 }
 
 .retrama-value__title {
-    max-width: 18ch;
+    max-width: 760px;
     margin-left: auto;
     margin-right: auto;
+    font-size: clamp(34px, 3.3vw, 48px);
+    line-height: 1.16;
 }
 
 .retrama-value__text {
@@ -188,6 +200,8 @@
     }
 
     .header-layout3 .menu-area {
+        width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
         margin-top: 14px;
         padding: 8px 10px 8px 14px;
     }
@@ -199,12 +213,40 @@
 
 @media (max-width: 575px) {
     .hero-retrama .hero-retrama-content {
+        display: block;
+        width: min(335px, calc(100vw - 40px)) !important;
+        max-width: min(335px, calc(100vw - 40px)) !important;
         padding: 170px 0 90px;
     }
 
     .hero-retrama-actions .th-btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .hero-retrama .hero-retrama-content .hero-title {
+        font-size: clamp(30px, 8vw, 36px);
+        line-height: 1.18;
+        width: min(335px, calc(100vw - 40px)) !important;
+        max-width: min(335px, calc(100vw - 40px)) !important;
+        white-space: normal !important;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .hero-retrama .hero-retrama-content .hero-text {
+        width: min(335px, calc(100vw - 40px));
+        max-width: min(335px, calc(100vw - 40px));
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-retrama-actions .th-btn,
+    .hero-retrama-actions .th-btn .btn-text {
+        min-width: 0;
+        max-width: min(335px, calc(100vw - 40px));
+        white-space: normal !important;
+        overflow-wrap: anywhere;
     }
 }
 
@@ -226,6 +268,20 @@
 .retrama-home-products .retrama-product-card,
 .process-box-wrap .process-box {
     height: 100%;
+}
+
+#services-section .service-box.style2 .box-icon {
+    width: 76px;
+    height: 76px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services-section .service-box.style2 .box-icon i {
+    color: #57b33e;
+    font-size: 42px;
+    line-height: 1;
 }
 
 .retrama-about-row {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { getWhatsAppUrl } from '../../constants/contact';
+import { getWhatsAppUrl, QUOTE_WHATSAPP_MESSAGE } from '../../constants/contact';
 
 const closeMobileMenu = () => {
     document.querySelectorAll('.th-menu-wrapper').forEach((el) => {
@@ -43,13 +43,7 @@ const MobileMenu = () => {
                             <Link to="/" onClick={handleNavigate}>Inicio</Link>
                         </li>
                         <li>
-                            <Link to="/nosotros" onClick={handleNavigate}>Nosotros</Link>
-                        </li>
-                        <li>
                             <Link to="/productos" onClick={handleNavigate}>Productos</Link>
-                        </li>
-                        <li>
-                            <Link to="/preguntas-frecuentes" onClick={handleNavigate}>FAQ</Link>
                         </li>
                         <li>
                             <Link to="/contacto" onClick={handleNavigate}>Contacto</Link>
@@ -57,7 +51,7 @@ const MobileMenu = () => {
                     </ul>
                     <div className="mt-4 px-3">
                         <a
-                            href={getWhatsAppUrl('Hola, me gustaría recibir más información.')}
+                            href={getWhatsAppUrl(QUOTE_WHATSAPP_MESSAGE)}
                             className="th-btn style1 th-radius w-100"
                             target="_blank"
                             rel="noopener noreferrer"

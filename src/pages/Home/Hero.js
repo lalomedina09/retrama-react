@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { getWhatsAppUrl, QUOTE_WHATSAPP_MESSAGE } from '../../constants/contact';
 
 const Hero = () => {
     return (
@@ -24,7 +25,12 @@ const Hero = () => {
                             Fabricamos, recolectamos y transformamos tarimas con calidad certificada para todo México.
                         </p>
                         <div className="btn-group justify-content-start hero-retrama-actions">
-                            <a href="#contacto" className="th-btn style1 th-radius th-icon">
+                            <a
+                                href={getWhatsAppUrl(QUOTE_WHATSAPP_MESSAGE)}
+                                className="th-btn style1 th-radius th-icon"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <span className="btn-text">Solicita tu cotización inmediata</span>
                                 <i className="fa-regular fa-arrow-right ms-2" aria-hidden="true"></i>
                             </a>

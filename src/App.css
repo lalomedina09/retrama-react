@@ -8,6 +8,56 @@ body {
     overflow-x: hidden;
 }
 
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+.sec-title,
+.breadcumb-title,
+.contact-media .box-title,
+.contact-media .box-text {
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 575px) {
+    .sec-title {
+        font-size: clamp(28px, 8vw, 36px);
+        line-height: 1.18;
+        max-width: min(335px, calc(100vw - 40px));
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-media {
+        width: min(100%, 335px, calc(100vw - 40px));
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .contact-media .icon-btn {
+        --btn-size: 56px;
+        flex: 0 0 56px;
+        font-size: 22px;
+    }
+
+    .contact-media .media-body {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .breadcumb-title,
+    .contact-media .box-title,
+    .contact-media .box-text,
+    .contact-media .box-text a {
+        width: 100%;
+        max-width: min(335px, calc(100vw - 40px));
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+}
+
 .container,
 .container.th-container2 {
     padding-left: clamp(16px, 4vw, 32px);

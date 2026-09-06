@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { EMAIL, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from '../../constants/contact';
+import { EMAIL, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL, getWhatsAppUrl, QUOTE_WHATSAPP_MESSAGE } from '../../constants/contact';
 
 const Footer = () => {
     const handleLinkClick = (section) => {
@@ -24,18 +24,16 @@ const Footer = () => {
     // Datos para mapear
     const enlacesRapidos = [
         { to: "/", text: "Inicio" },
-        { to: "/nosotros", text: "Nosotros" },
         { to: "/productos", text: "Productos" },
-        { to: "/preguntas-frecuentes", text: "FAQ" },
-        { to: "/contacto", text: "Contáctanos" }
+        { to: "/contacto", text: "Contacto" },
+        { href: getWhatsAppUrl(QUOTE_WHATSAPP_MESSAGE), text: "Solicitar cotización" }
     ];
 
     const servicios = [
         { to: "/productos#tarimas-nuevas", text: "Tarimas Nuevas" },
         { to: "/productos#tarimas-reacondicionadas", text: "Tarimas Reacondicionadas" },
         { to: "/productos#tarimas-hibridas", text: "Tarimas Híbridas" },
-        { to: "/productos#tarimas-medida", text: "Tarimas a la Medida" },
-        { to: "/contacto", text: "Solicitar cotización" }
+        { to: "/productos#tarimas-medida", text: "Tarimas a la Medida" }
     ];
 
     const socialLinks = [
@@ -45,9 +43,9 @@ const Footer = () => {
             icon: "fab fa-facebook-f"
         },
         {
-            platform: "twitter",
-            url: "https://www.twitter.com/retrama",
-            icon: "fab fa-twitter"
+            platform: "instagram",
+            url: "#instagram-pendiente",
+            icon: "fab fa-instagram"
         },
         {
             platform: "linkedin",
@@ -116,12 +114,23 @@ const Footer = () => {
                                     <ul className="menu">
                                         {enlacesRapidos.map((enlace, index) => (
                                             <li key={index}>
-                                                <Link
-                                                    to={enlace.to}
-                                                    onClick={() => handleLinkClick(enlace.text)}
-                                                >
-                                                    {enlace.text}
-                                                </Link>
+                                                {enlace.href ? (
+                                                    <a
+                                                        href={enlace.href}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        onClick={() => handleLinkClick(enlace.text)}
+                                                    >
+                                                        {enlace.text}
+                                                    </a>
+                                                ) : (
+                                                    <Link
+                                                        to={enlace.to}
+                                                        onClick={() => handleLinkClick(enlace.text)}
+                                                    >
+                                                        {enlace.text}
+                                                    </Link>
+                                                )}
                                             </li>
                                         ))}
                                     </ul>
@@ -202,7 +211,7 @@ const Footer = () => {
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
                         <div className="copyright-text mb-2 mb-md-0">
                             <span className="text-sm">
-                                © 2025 <Link to="/" className="fw-semibold text-white">RETRAMA</Link>.
+                                © 2026 <Link to="/" className="fw-semibold text-white">RETRAMA</Link>.
                                 Todos los derechos reservados.
                             </span>
                         </div>

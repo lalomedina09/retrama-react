@@ -13,37 +13,37 @@ const Services = () => {
     const services = [
         {
             id: 1,
-            icon: "/assets/img/icon/service_1_1.svg",
+            iconClass: "fa-solid fa-pallet-boxes",
             title: "Compra de tarimas usadas",
             text: "Adquirimos sus tarimas usadas en buen estado, ofreciendo un valor justo y contribuyendo al ciclo de reutilización."
         },
         {
             id: 2,
-            icon: "/assets/img/icon/service_1_2.svg",
+            iconClass: "fa-solid fa-hammer",
             title: "Reparacion de tarimas",
             text: "Restauramos tarimas dañadas para extender su vida útil, manteniendo los más altos estándares de calidad y seguridad."
         },
         {
             id: 3,
-            icon: "/assets/img/icon/service_1_3.svg",
+            iconClass: "fa-solid fa-badge-check",
             title: "Cumplimiento con la norma 144",
             text: "Garantizamos que todas nuestras tarimas cumplen con la normativa NMX-144 para exportación y uso internacional."
         },
         {
             id: 4,
-            icon: "/assets/img/icon/service_1_4.svg",
+            iconClass: "fa-solid fa-recycle",
             title: "Tarimas hibridas",
             text: "Combinamos madera recuperada con materiales nuevos para crear tarimas económicas y ambientalmente responsables."
         },
         {
             id: 5,
-            icon: "/assets/img/icon/service_1_1.svg",
+            iconClass: "fa-solid fa-ruler-combined",
             title: "Tarimas a la medida",
             text: "Diseñamos y fabricamos tarimas personalizadas según sus especificaciones técnicas y requerimientos de carga."
         },
         {
             id: 6,
-            icon: "/assets/img/icon/service_1_2.svg",
+            iconClass: "fa-solid fa-truck-ramp-box",
             title: "Asesoría técnica",
             text: "Brindamos consultoría especializada para optimizar sus procesos de embalaje, almacenamiento y transporte."
         }
@@ -91,10 +91,7 @@ const Services = () => {
                                 <div className="service-box style2">
                                     <div className="box-content">
                                         <div className="box-icon">
-                                            <img
-                                                src={service.icon}
-                                                alt={`Icono ${service.title}`}
-                                            />
+                                            <i className={service.iconClass} aria-hidden="true"></i>
                                         </div>
                                         <h3 className="box-title">{service.title}</h3>
                                         <p className="box-text">{service.text}</p>

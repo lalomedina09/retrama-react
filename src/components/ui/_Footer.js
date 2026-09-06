@@ -23,11 +23,10 @@ const Footer = () => {
     ];
 
     const enlaces = [
-        { href: "#nosotros", text: "Nosotros" },
-        { href: "#servicios", text: "Servicios" },
-        { href: "#industrias", text: "Industrias" },
-        { href: "#noticias", text: "Noticias" },
-        { href: "#contacto", text: "Contactanos" }
+        { href: "/", text: "Inicio" },
+        { href: "/productos", text: "Productos" },
+        { href: "/contacto", text: "Contacto" },
+        { href: "https://wa.me/528120397139?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20con%20Retrama.", text: "Solicitar cotización" }
     ];
 
     const servicios = [
@@ -71,8 +70,8 @@ const Footer = () => {
                                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                             <i className="fab fa-facebook-f"></i>
                                         </a>
-                                        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                                            <i className="fab fa-twitter"></i>
+                                        <a href="#instagram-pendiente" aria-label="Instagram pendiente">
+                                            <i className="fab fa-instagram"></i>
                                         </a>
                                         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                                             <i className="fab fa-linkedin-in"></i>
@@ -142,8 +141,8 @@ const Footer = () => {
                                     <p className="footer-info">
                                         <i className="fa-sharp fa-solid fa-phone"></i>
                                         <span>
-                                            <a className="text-inherit" href="tel:+528120397138">
-                                                +52 81 2039 7138
+                                            <a className="text-inherit" href="tel:+528120397139">
+                                                +52 81 2039 7139
                                             </a>
                                         </span>
                                     </p>
@@ -152,7 +151,7 @@ const Footer = () => {
                                     <p className="footer-info">
                                         <i className="fa-sharp fa-solid fa-envelope"></i>
                                         <span>
-                                            <a className="text-inherit" href="mailto:contacto@retrama.com">
+                                            <a className="text-inherit" href="mailto:contacto@retrama.com.mx">
                                                 contacto@retrama.com.mx
                                             </a>
                                         </span>
@@ -194,8 +193,7 @@ const Footer = () => {
             <div className="copyright-wrap">
                 <div className="container">
                     <p className="copyright-text">
-                        Copyright <i className="fal fa-copyright"></i> 2025
-                        <a href="/"> RETRAMA </a>. All Rights Reserved.
+                        © 2026 <a href="/"> RETRAMA </a>. Todos los derechos reservados.
                     </p>
                 </div>
             </div>
