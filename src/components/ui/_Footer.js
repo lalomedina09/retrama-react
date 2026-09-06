@@ -67,16 +67,16 @@ const Footer = () => {
                                         integridad de sus productos en toda la cadena de suministro.
                                     </p>
                                     <div className="th-social">
-                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                             <i className="fab fa-facebook-f"></i>
                                         </a>
                                         <a href="#instagram-pendiente" aria-label="Instagram pendiente">
                                             <i className="fab fa-instagram"></i>
                                         </a>
-                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                             <i className="fab fa-linkedin-in"></i>
                                         </a>
-                                        <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://wa.me/528120397139" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                                             <i className="fab fa-whatsapp"></i>
                                         </a>
                                     </div>
@@ -177,6 +177,7 @@ const Footer = () => {
                                             <a
                                                 href={image.src}
                                                 className="gallery-btn popup-image"
+                                                aria-label={image.alt}
                                                 onClick={(e) => handleGalleryClick(e, image.src)}
                                             >
                                                 <i className="fab fa-instagram"></i>

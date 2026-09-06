@@ -35,6 +35,17 @@
     overflow-wrap: break-word;
 }
 
+.products-intro__text {
+    display: block;
+    width: 100%;
+    max-width: 820px;
+    margin: 24px auto 0;
+    color: #3d4a42;
+    font-size: 17px;
+    line-height: 1.75;
+    box-sizing: border-box;
+}
+
 .product-block {
     padding: 90px 0;
     scroll-margin-top: 120px;
@@ -148,12 +159,12 @@
         order: 1;
     }
 
-    .product-block__media {
+    .product-block__subtitle,
+    .product-block__claim {
         order: 2;
     }
 
-    .product-block__subtitle,
-    .product-block__claim {
+    .product-block__media {
         order: 3;
     }
 
@@ -174,6 +185,14 @@
         max-width: min(335px, calc(100vw - 40px));
         white-space: normal;
         overflow-wrap: anywhere;
+    }
+
+    .products-intro__text {
+        width: min(335px, calc(100vw - 40px));
+        max-width: 100%;
+        margin: 24px 0 0 20px;
+        font-size: 16px;
+        text-align: left;
     }
 
     .product-block__title,

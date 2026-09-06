@@ -116,6 +116,9 @@ const Products = () => {
                             <h2 className="products-intro__title">
                                 Retrama: el socio estratégico que tu logística necesita.
                             </h2>
+                            <p className="products-intro__text">
+                                Ofrecemos soluciones integrales para la transportación de productos con tarimas nuevas, recicladas e híbridas, diseñadas a la medida y con la capacidad de carga que cada negocio necesita. Complementamos nuestra producción con servicios de valor agregado como tratamiento térmico NOM-144 para exportación, stock y entregas programadas, reparación, clasificación de material de primera y entregas simultáneas en distintas plantas. Con atención inmediata en órdenes urgentes y personal especializado en inspección de calidad, garantizamos seguridad, durabilidad y eficiencia logística en cada tarima.
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -171,7 +174,7 @@ const Products = () => {
                             Cuéntanos tu necesidad y te ayudamos a elegir la mejor solución para tu operación.
                         </p>
                         <div className="products-cta__actions">
-                            <Link to="/contacto" className="th-btn style1 th-radius th-icon">
+                            <Link to="/contacto#formulario" className="th-btn style1 th-radius th-icon">
                                 <span className="btn-text">Solicita tu cotización</span>
                                 <i className="fa-regular fa-arrow-right ms-2" aria-hidden="true"></i>
                             </Link>

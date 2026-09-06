@@ -127,7 +127,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="space-bottom">
+        <div className="space-bottom" id="formulario">
             <div className="container">
                 <div className="row gy-4">
                     <div className="col-xl-7">

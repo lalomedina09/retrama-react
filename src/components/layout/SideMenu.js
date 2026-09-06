@@ -19,19 +19,19 @@ const SideMenu = () => {
                             Somos especialistas en la fabricación de tarimas, embalajes y empaques industriales de madera, diseñados para garantizar la integridad de sus productos en toda la cadena de suministro.
                         </p>
                         <div className="th-social">
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                 <i className="fab fa-facebook-f"></i>
                             </a>
                             <a href="#instagram-pendiente" aria-label="Instagram pendiente">
                                 <i className="fab fa-instagram"></i>
                             </a>
-                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
                             <a href="https://wa.me/528120397139" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
                                 <i className="fab fa-whatsapp"></i>
                             </a>
-                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                                 <i className="fab fa-youtube"></i>
                             </a>
                         </div>

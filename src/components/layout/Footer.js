@@ -96,6 +96,7 @@ const Footer = () => {
                                                 href={social.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
+                                                aria-label={social.platform}
                                                 onClick={() => handleSocialClick(social.platform)}
                                             >
                                                 <i className={social.icon}></i>
