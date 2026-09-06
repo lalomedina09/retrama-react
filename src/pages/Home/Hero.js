@@ -15,7 +15,20 @@ const Hero = () => {
                     }}
                     role="img"
                     aria-label="Tarimas de madera RETRAMA"
-                ></div>
+                >
+                    <video
+                        className="hero-background-video"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        poster="/assets/img/hero/bg-0.jpeg"
+                        aria-hidden="true"
+                    >
+                        <source src="/assets/video/video.mp4" type="video/mp4" />
+                    </video>
+                </div>
                 <div className="container">
                     <div className="hero-style3 hero-retrama-content">
                         <h1 className="hero-title">

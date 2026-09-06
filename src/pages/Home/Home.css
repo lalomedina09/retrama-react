@@ -6,6 +6,34 @@
 .hero-retrama .th-hero-bg {
     position: absolute;
     inset: 0;
+    overflow: hidden;
+}
+
+.hero-retrama .th-hero-bg::before {
+    z-index: 1;
+    background: rgba(5, 20, 30, 0.55);
+    opacity: 1;
+    pointer-events: none;
+}
+
+.hero-retrama .hero-background-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-retrama .container {
+    position: relative;
+    z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-retrama .hero-background-video {
+        display: none;
+    }
 }
 
 .hero-retrama .hero-retrama-content {
