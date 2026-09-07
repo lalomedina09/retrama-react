@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { getWhatsAppUrl, QUOTE_WHATSAPP_MESSAGE } from '../../constants/contact';
 
 const closeMobileMenu = () => {
@@ -9,6 +9,16 @@ const closeMobileMenu = () => {
 };
 
 const MobileMenu = () => {
+    const location = useLocation();
+
+    const isActiveLink = (path) => {
+        if (path === '/') {
+            return location.pathname === '/' ? 'th-active' : '';
+        }
+
+        return location.pathname === path || location.pathname.startsWith(`${path}/`) ? 'th-active' : '';
+    };
+
     const handleNavigate = () => {
         closeMobileMenu();
     };
@@ -39,13 +49,13 @@ const MobileMenu = () => {
 
                 <div className="th-mobile-menu">
                     <ul>
-                        <li>
+                        <li className={isActiveLink('/')}>
                             <Link to="/" onClick={handleNavigate}>Inicio</Link>
                         </li>
-                        <li>
+                        <li className={isActiveLink('/productos')}>
                             <Link to="/productos" onClick={handleNavigate}>Productos</Link>
                         </li>
-                        <li>
+                        <li className={isActiveLink('/contacto')}>
                             <Link to="/contacto" onClick={handleNavigate}>Contacto</Link>
                         </li>
                     </ul>

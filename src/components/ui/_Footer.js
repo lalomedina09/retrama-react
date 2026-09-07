@@ -26,7 +26,7 @@ const Footer = () => {
         { href: "/", text: "Inicio" },
         { href: "/productos", text: "Productos" },
         { href: "/contacto", text: "Contacto" },
-        { href: "https://wa.me/528120397139?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20con%20Retrama.", text: "Solicitar cotización" }
+        { href: "https://wa.me/528120397189?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n%20con%20Retrama.", text: "Solicitar cotización" }
     ];
 
     const servicios = [
@@ -76,7 +76,7 @@ const Footer = () => {
                                         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                             <i className="fab fa-linkedin-in"></i>
                                         </a>
-                                        <a href="https://wa.me/528120397139" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                        <a href="https://wa.me/528120397189" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                                             <i className="fab fa-whatsapp"></i>
                                         </a>
                                     </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                                     <p className="footer-info">
                                         <i className="fa-sharp fa-solid fa-phone"></i>
                                         <span>
-                                            <a className="text-inherit" href="tel:+528120397139">
+                                            <a className="text-inherit" href="tel:+528120397189">
                                                 +52 81 2039 7139
                                             </a>
                                         </span>

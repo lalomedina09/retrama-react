@@ -18,7 +18,7 @@ const Home = () => {
     return (
         <>
             <Header />
-            <main>
+            <main className="page-transition">
                 <Hero />
                 <Features />
                 <Products />

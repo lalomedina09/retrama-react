@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Header from '../components/layout/Header';
 import { getWhatsAppUrl, QUOTE_WHATSAPP_MESSAGE } from '../constants/contact';
 import './Products.css';
@@ -64,32 +64,14 @@ const productSections = [
 ];
 
 const Products = () => {
-    const location = useLocation();
-
     useEffect(() => {
         document.title = 'Tarimas de madera | Retrama';
     }, []);
 
-    useEffect(() => {
-        if (!location.hash) {
-            return undefined;
-        }
-
-        const targetId = location.hash.replace('#', '');
-        const timeoutId = window.setTimeout(() => {
-            const element = document.getElementById(targetId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 150);
-
-        return () => window.clearTimeout(timeoutId);
-    }, [location.hash]);
-
     return (
         <>
             <Header />
-            <main className="page-products-landing">
+            <main className="page-products-landing page-transition">
                 <div
                     className="breadcumb-wrapper products-hero"
                     style={{

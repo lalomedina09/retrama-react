@@ -1,8 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { EMAIL, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL, getWhatsAppUrl, QUOTE_WHATSAPP_MESSAGE } from '../../constants/contact';
 
 const Footer = () => {
+    const location = useLocation();
+
+    const getInternalLinkClass = (to) => {
+        const [path, hash = ''] = to.split('#');
+
+        if (hash) {
+            return location.pathname === path && location.hash === `#${hash}` ? 'is-active' : '';
+        }
+
+        if (path === '/') {
+            return location.pathname === '/' ? 'is-active' : '';
+        }
+
+        return location.pathname === path || location.pathname.startsWith(`${path}/`) ? 'is-active' : '';
+    };
+
     const handleLinkClick = (section) => {
         console.log(`Navegando a: ${section}`);
     };
@@ -127,6 +143,7 @@ const Footer = () => {
                                                 ) : (
                                                     <Link
                                                         to={enlace.to}
+                                                        className={getInternalLinkClass(enlace.to)}
                                                         onClick={() => handleLinkClick(enlace.text)}
                                                     >
                                                         {enlace.text}
@@ -149,6 +166,7 @@ const Footer = () => {
                                             <li key={index}>
                                                 <Link
                                                     to={servicio.to}
+                                                    className={getInternalLinkClass(servicio.to)}
                                                     onClick={() => handleLinkClick(servicio.text)}
                                                 >
                                                     {servicio.text}
